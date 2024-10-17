@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 0rem 1rem;
     padding-left: 0;
@@ -29,3 +29,10 @@
     text-decoration: underline;
 }
 
+/*aplica el font*/
+.navbar-links li a {
+  font-family: 'MontserratAlternates', sans-serif;
+  font-weight: 700; /* Bold o negrita */
+  padding: 10px 15px;
+  text-decoration: none; /* Opcional: quita el subrayado */
+}

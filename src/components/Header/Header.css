@@ -1,0 +1,27 @@
+.headbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una pequeña sombra para separación */
+  }
+  
+  .button-container {
+    /* Estilos para centrar el botón */
+  }
+  
+  .custom-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3; /* Cambia de color al pasar el ratón */
+  }
+  
