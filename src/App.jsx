@@ -1,6 +1,21 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar.jsx'
+/*Es un componente que define la estructura pincipal del sitio web
+y la configuración de rutas a otras páginas del sitio */
+import Routers from "./routes/index"
+/*El componente Routers de BrowserRouterse asegura de que solo una de 
+las rutas dentro de él se renderice en cualquier momento. 
+Evalúa las rutas en orden y renderiza la primera que coincida. */
+function App() {
+  return(
+    <>
+      <Routers/>
+    </>
+  )
+  
+}
+export default App
+/*import Navbar from './components/Navbar/Navbar.jsx'
 import Header from './components/Header/Header.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   
@@ -9,13 +24,11 @@ function App() {
       <div>
         <Header/>
         <Navbar/>
-        <div className="body-main-page">
-          <h1>Bienvenidos a mi aplicación bancaria</h1>
-          <p>Esto es una prueba</p>
+        <Body/>
         </div>
       </div>
     </>
   )
 }
 
-export default App
+export default App*/
