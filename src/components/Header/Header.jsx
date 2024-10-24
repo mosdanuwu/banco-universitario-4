@@ -12,20 +12,19 @@ const Header = () => {
   };
 
   return (
-    <div className="headbar">
-      
+    <div className="header fixed  container-fluid d-flex align-items-center">
         <Link to="/">
-        <img className="contenedor-logo"
+        <img className="contenedor-logo img-fluid"
         src={Logo} alt="Logo de Banco Universitario" />
-        </Link>
+        </Link >
       
-      <div className="contenedor-imagen-boton"> 
-      <img className="contenedor-imagen"
-        src={laptopPersonRegular}>
-        </img>
-      <div className="contenedor-button">
-        < Button text="Banca en Línea" onClick={handleButtonClick} className="small"/>
-      </div>
+      <div className="contenedor-imagen-boton d-flex flex-column align-items-center"> 
+        <img className="user-icon "
+          src={laptopPersonRegular}>
+          </img>
+        <div className="contenedor-button">
+          < Button text="Banca en Línea" onClick={handleButtonClick} className="custom-button"/>
+        </div>
       </div>
       
     </div>
