@@ -1,12 +1,8 @@
 .footer-custom {
     background-color: #E0E3E3;
-    color: #ffffff !important;
+    
 
-    img {
-        filter: brightness(170%);
-    }
 
-    li {
-        padding: 0.5em 0;
-    }
+    color:#363940;
 }
+

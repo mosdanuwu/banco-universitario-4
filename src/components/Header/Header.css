@@ -1,27 +1,35 @@
 .headbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una pequeña sombra para separación */
+    padding: 32px 122px 22px 6px;
+    height: 127px;
+    width: 1312px;
   }
   
-  .button-container {
-    /* Estilos para centrar el botón */
+  .contenedor-imagen{
+    left: 35px;
+    bottom: 0px;
   }
   
   .custom-button {
     padding: 10px 20px;
-    background-color: #007bff; /* Color del botón */
-    color: white;
+    background-color: #49BEB7; /* Color del botón */
+    color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-family: 'MontserratAlternates', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
   }
   
   .custom-button:hover {
-    background-color: #0056b3; /* Cambia de color al pasar el ratón */
+    background-color: #54ddd4; /* Cambia de color al pasar el ratón */
   }
   
+  .contenedor-logo{
+    display: inline-block;
+    padding-right: 330px;
+
+  }
