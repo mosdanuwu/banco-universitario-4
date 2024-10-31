@@ -18,24 +18,26 @@ export default function Contacto () {
           <div  className= "align-items-center justify-content-center ">
             <h1 className="container_tac container-fluid d-flex align-items-center justify-content-center text-white">Contactos</h1>
                 <div className= "margin: 0 auto">
-                     <p>Dispones de los siguientes medios de comunicación para trasmitir tus sugerencias
+                     <p className='center-text'>Dispones de los siguientes medios de comunicación para trasmitir tus sugerencias
                       o solicitar mayor información sobre nuestros servicios.
                       </p>
-                      <h3>Teléfono</h3> <img src={soporte}/>
+
+                      <h3 >Teléfono</h3> <img src={soporte} />
                       <p> +58 212 555-5555</p>
                       <h3>Fax</h3> <img src={fax}/>
                       <p> +58 212 555-5555</p>
                       <h3>Correo Electrónico</h3> <img src={gmail}/>
-                      <p> info@bancouniversitario.com.ve</p>
+                      <p > info@bancouniversitario.com.ve</p>
                       <h3>Redes Sociales</h3>
-                      <p> @bancouniversitariove</p>
-                     <div className="col-12 col-md-6 col-xs-3 image-container">
-                        <img src={faceimag} />
-                        <img src={twitter} />
-                        <img src={instagram}/>
-                      </div>
+                      <p className= "col-12 col-md-12 center-text"> @bancouniversitariove</p>
          
                 </div>
+                    <div className="col-6 col-md-12 image-container center-text">
+                            <img src={faceimag} className='center-text'/>
+                            <img src={twitter} className='center-text'/>
+                            <img src={instagram} className='center-text'/>
+                          </div>
+
                 
             </div>
               

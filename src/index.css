@@ -26,3 +26,25 @@
     background-color: #67C7C1;
     font-family: 'MontserratAlternates', sans-serif;
   }
+
+  .center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+  }
+  
+  .container_n{
+    text-decoration-color: #085A4C;
+    font-family: 'MontserratAlternates', sans-serif;
+    font-weight: 400;
+    font-style:inherit;
+  }
+
+  
+  .container_s{
+    font-family: 'MontserratAlternates', sans-serif;
+    font-weight: 400;
+    font-style:inherit;
+  }
