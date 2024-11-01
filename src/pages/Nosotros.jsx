@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import mision from  "../assets/images/mision.png";
 import vision from "../assets/images/vision.png";
 import objetivos from "../assets/images/objetivos.png";
+import './nosotros.css';
 
 export default function Nosotros ()  {
   return (
@@ -14,21 +15,21 @@ export default function Nosotros ()  {
 
      
           <div  className= "align-items-center justify-content-center ">
-             <h1 className='center-text'>¿Quienes somos nosotros?</h1>
+             <h1 className='title_nosotros container'>¿Quienes somos nosotros?</h1>
              <br/>
-              <div className="center-text container_tac align-items-center justify-content-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-20 "> 
+              <div className="mision_container container"> 
 
-                    <h2  className='center-text'> Mision</h2> 
+                    <h2  className='mision_title'> Mision</h2> 
                     <img src={mision} />
-                    <p  className='center-text'> Somos una institución financiera comprometida con 
+                    <p  className='mision_parrafo'> Somos una institución financiera comprometida con 
                     los estudiantes universitarios, brindando soluciones 
                     financieras ágiles y eficientes. Nuestra misión es facilitar 
                     la gestión de sus recursos y contribuir al crecimiento económico 
                     y personal de nuestros clientes.</p>
 
-                    <h2  className='center-text'> Vision</h2> 
+                    <h2  className='vision_title'> Vision</h2> 
                     <img src={vision}/>
-                    <p  className='center-text'> Queremos ser la mejor opción financiera para estudiantes
+                    <p  className='vision_parrafo'> Queremos ser la mejor opción financiera para estudiantes
                       universitarios en el país. Deseamos ser reconocidos por 
                       nuestros servicios innovadores, la calidad de atención 
                       al cliente y nuestro compromiso con la educación 

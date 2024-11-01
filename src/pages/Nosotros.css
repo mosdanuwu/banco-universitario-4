@@ -1,0 +1,27 @@
+.title_nosotros{
+    text-align: center;
+    margin-top: 10px;
+    color: #085F63;
+
+}
+
+.mision_container{
+    text-align: center;
+    align-items: center; 
+    justify-content:center; 
+    max-width: 600px;     
+    margin: 0 auto;
+    padding: 20px 5px;
+    background-color: #49BEB7;
+    display: flex;
+    gap: 10px;
+
+    @media (min-width: 640px) {
+        padding: 20px 10px;
+      }
+    
+      @media (min-width: 1024px) {
+        padding: 20px 20px;
+      }
+ 
+}
