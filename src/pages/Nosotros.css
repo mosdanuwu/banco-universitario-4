@@ -12,14 +12,12 @@ mision y vision*/
     text-align: center;
     align-items: center; 
     justify-content:center; 
-    max-width: 600px;     
+     
     margin: 0 auto;
     padding: 20px 5px;
     background-color: #49BEB7;
     display: flex;
     gap: 10px;
-    margin-left: 0;
-    margin-right: 0;
 
     @media (min-width: 640px) {
         padding: 20px 10px;
@@ -46,26 +44,31 @@ mision y vision*/
 }
 /*container de objetivos*/
 .objetivos_container{
-  padding-top: 100px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
  
 }
 .objetivos_content{
-  max-width: 70%;
+  max-width: 60%;
   max-height: 3500px;
-  margin: 50px;
+  margin: 80px;
 
 }
 /*container de objetivos
 titulo*/
 .objetivos_title{
     text-align: center;
-    margin-top: 10px;
+    margin: 30px;
     color: #085F63;
 }
 .obj_img{
   width: 400px;
-  margin-right: 40px;
+  margin-right: 50px;
+}
+p::before {
+  content: "• "; 
+  font-size: 40px; 
+  margin-right: 5px;
+  color: #49BEB7;
 }
