@@ -12,7 +12,8 @@ mision y vision*/
     text-align: center;
     align-items: center; 
     justify-content:center; 
-     
+    width: 100%;
+    height: 400px;
     margin: 0 auto;
     padding: 20px 5px;
     background-color: #49BEB7;

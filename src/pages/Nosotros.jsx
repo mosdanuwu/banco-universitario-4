@@ -17,7 +17,7 @@ export default function Nosotros ()  {
           <div  className= "align-items-center justify-content-center ">
              <h1 className='title_nosotros'>¿Quienes somos nosotros?</h1>
              <br/>
-              <div className="mision_container container"> 
+              <div className="mision_container "> 
 
                     <h2  className='mision_title'> Mision</h2> 
                     <img className='img_nosotros' 
