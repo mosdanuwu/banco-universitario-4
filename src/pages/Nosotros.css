@@ -1,10 +1,13 @@
+/*container de mision y vision
+titulo*/
 .title_nosotros{
     text-align: center;
     margin-top: 10px;
     color: #085F63;
 
 }
-
+/*container de mision y vision
+mision y vision*/
 .mision_container{
     text-align: center;
     align-items: center; 
@@ -15,6 +18,8 @@
     background-color: #49BEB7;
     display: flex;
     gap: 10px;
+    margin-left: 0;
+    margin-right: 0;
 
     @media (min-width: 640px) {
         padding: 20px 10px;
@@ -24,4 +29,43 @@
         padding: 20px 20px;
       }
  
+}
+
+.mision_title{
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.mision_parrafo{
+  line-height: 1.7;
+}
+
+.img_nosotros{
+  display: grid;
+  border: #085F63;
+}
+/*container de objetivos*/
+.objetivos_container{
+  padding-top: 100px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.objetivos_content{
+  max-width: 70%;
+  max-height: 3500px;
+  margin: 50px;
+
+}
+/*container de objetivos
+titulo*/
+.objetivos_title{
+    text-align: center;
+    margin-top: 10px;
+    color: #085F63;
+}
+.obj_img{
+  width: 450px;
+  margin-right: 40px;
 }

@@ -15,12 +15,13 @@ export default function Nosotros ()  {
 
      
           <div  className= "align-items-center justify-content-center ">
-             <h1 className='title_nosotros container'>¿Quienes somos nosotros?</h1>
+             <h1 className='title_nosotros'>¿Quienes somos nosotros?</h1>
              <br/>
               <div className="mision_container container"> 
 
                     <h2  className='mision_title'> Mision</h2> 
-                    <img src={mision} />
+                    <img className='img_nosotros' 
+                    src={mision} />
                     <p  className='mision_parrafo'> Somos una institución financiera comprometida con 
                     los estudiantes universitarios, brindando soluciones 
                     financieras ágiles y eficientes. Nuestra misión es facilitar 
@@ -28,7 +29,8 @@ export default function Nosotros ()  {
                     y personal de nuestros clientes.</p>
 
                     <h2  className='vision_title'> Vision</h2> 
-                    <img src={vision}/>
+                    <img className='img_nosotros'
+                    src={vision}/>
                     <p  className='vision_parrafo'> Queremos ser la mejor opción financiera para estudiantes
                       universitarios en el país. Deseamos ser reconocidos por 
                       nuestros servicios innovadores, la calidad de atención 
@@ -36,12 +38,11 @@ export default function Nosotros ()  {
                       y el desarrollo social.</p>
               </div>
 
-              <div className= "align-items-center justify-content-center">
-                <br />
-                <br />
-                <br />
-                <h1 className='col-10 col-md-12 col-xs-3 image-container'>Objetivos</h1>  
-                <img src={objetivos} className='img-fluid rounded-lg'/>
+              <div className= "objetivos_container ">
+
+                <div className='objetivos_content'>
+                <h1 className='objetivos_title'>Objetivos</h1>  
+               
                 <p> Brindar a los estudiantes universitarios un servicio eficiente y 
                   de calidad en la gestión de sus recursos financieros, a través de 
                   nuestros canales digitales y nuestros puntos de atención presencial. </p>
@@ -64,6 +65,10 @@ export default function Nosotros ()  {
                       siempre a la vanguardia de las necesidades de nuestros
                       clientes y del mercado.</p>
 
+
+                </div>
+                <img src={objetivos} className='obj_img'/>
+                
 
 
               </div>
