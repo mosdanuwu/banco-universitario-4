@@ -1,0 +1,51 @@
+/*titulo principal de la pagina*/
+
+.servicios_title{
+    text-align: center;
+    margin-top: 10px;
+    color: #085F63;
+}
+
+/*containers turquesas*/
+.turquesa_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #49BEB7;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+.titulo_servicioTurquesa{
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 20px;
+
+}
+.img_turquesa{
+    max-width: 300px;
+    margin-right: 50px;
+    
+}
+
+/*containers blancos*/
+.blanco_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.titulo_servicio{
+    text-align: right;
+    color: #085F63;
+    margin-right: 300px;
+    margin-top: 20px;
+}
+.img_blanco{
+    max-width: 300px;
+    margin-left: 50px;
+}
+
