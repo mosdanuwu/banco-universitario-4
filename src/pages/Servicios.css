@@ -18,13 +18,14 @@
 }
 .titulo_servicioTurquesa{
     text-align: left;
-    margin-left: 300px;
+    margin-left: 40px;
     margin-top: 20px;
 
 }
 .img_turquesa{
     max-width: 300px;
-    margin-right: 50px;
+    margin: 50px;
+    
     
 }
 
@@ -41,11 +42,48 @@
 .titulo_servicio{
     text-align: right;
     color: #085F63;
-    margin-right: 300px;
+    margin-right: 550px;
     margin-top: 20px;
 }
 .img_blanco{
     max-width: 300px;
-    margin-left: 50px;
+    margin: 50px;
+}
+
+
+/*margenes parrafos
+turquesa*/
+.transf_container{
+    margin-left: 75px;
+    margin-right: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.retiro_container{
+    margin-left: 75px;
+    margin-right: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.beca_container{
+    margin-left: 75px;
+    margin-right: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*margenes parrafos
+blanco*/
+.deposito_container{
+    margin-right: 75px;
+    margin-left: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.matricula_container{
+    margin-right: 75px;
+    margin-left: 200px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
