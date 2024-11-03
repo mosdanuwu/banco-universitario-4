@@ -1,0 +1,44 @@
+.titulo_contactos{
+    background-color: #49BEB7;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo_cont{
+    text-align: center;
+    color: white;
+}
+
+/*leyenda*/
+.leyenda{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*imformacion contactos*/
+.contactos_info{  
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.contactos{
+    margin-left: 600px;
+    margin-top: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 600px;
+}
+
+.img_contacto{
+    margin-left: 850px;
+    max-width: 100px;
+
+}
+

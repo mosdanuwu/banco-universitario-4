@@ -67,7 +67,7 @@ titulo*/
   width: 400px;
   margin-right: 50px;
 }
-p::before {
+.cont::before {
   content: "• "; 
   font-size: 40px; 
   margin-right: 5px;
