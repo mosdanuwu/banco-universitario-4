@@ -4,7 +4,6 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Estudiantes from "../assets/images/Estudiantes-body.png"
 
-
 export default function Home(){
     return(
         <>

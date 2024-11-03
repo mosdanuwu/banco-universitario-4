@@ -15,9 +15,9 @@ export default function Contacto () {
     <>
     <Header/>
     <Navbar/>
-          <div  className= "align-items-center justify-content-center ">
+          <div  className= "container-fluid align-items-center justify-content-center ">
             <h1 className="container_tac container-fluid d-flex align-items-center justify-content-center text-white">Contactos</h1>
-                <div className= "margin: 0 auto">
+                <div className= "container">
                      <p className='center-text'>Dispones de los siguientes medios de comunicación para trasmitir tus sugerencias
                       o solicitar mayor información sobre nuestros servicios.
                       </p>
