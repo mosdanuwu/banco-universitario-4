@@ -1,0 +1,75 @@
+/*container de mision y vision
+titulo*/
+.title_nosotros{
+    text-align: center;
+    margin-top: 10px;
+    color: #085F63;
+
+}
+/*container de mision y vision
+mision y vision*/
+.mision_container{
+    text-align: center;
+    align-items: center; 
+    justify-content:center; 
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px 5px;
+    background-color: #49BEB7;
+    display: flex;
+    gap: 10px;
+
+    @media (min-width: 640px) {
+        padding: 20px 10px;
+      }
+    
+      @media (min-width: 1024px) {
+        padding: 20px 20px;
+      }
+ 
+}
+
+.mision_title{
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.mision_parrafo{
+  line-height: 1.7;
+}
+
+.img_nosotros{
+  display: grid;
+  border: #085F63;
+}
+/*container de objetivos*/
+.objetivos_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.objetivos_content{
+  max-width: 60%;
+  max-height: 3500px;
+  margin: 80px;
+
+}
+/*container de objetivos
+titulo*/
+.objetivos_title{
+    text-align: center;
+    margin: 30px;
+    color: #085F63;
+}
+.obj_img{
+  width: 400px;
+  margin-right: 50px;
+}
+.cont::before {
+  content: "• "; 
+  font-size: 40px; 
+  margin-right: 5px;
+  color: #49BEB7;
+}
