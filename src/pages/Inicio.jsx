@@ -1,10 +1,13 @@
-import React from "react";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
+import React from "react"
+import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer"
+import Navbar from "../components/Navbar/Navbar"
+
 import Estudiantes from "../assets/images/Estudiantes-body.png"
 
-export default function Home(){
+const Home=()=>{
+
+   
     return(
         <>
         <Header/>
@@ -40,3 +43,4 @@ export default function Home(){
         </>
     )
 }
+export default Home;

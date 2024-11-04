@@ -1,15 +1,17 @@
 import React from 'react'
 import './Header.css'
-import Button from '../Button/Button.jsx'
+//import Button from '../Button/Button.jsx'
 import Logo from '../../assets/icons/logo-principal-header.svg'
 import laptopPersonRegular from '../../assets/icons/laptop-person-regular.svg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Header = () => {
-  const handleButtonClick = () => {
-    console.log('Botón clicado');
-  };
+    const navigate = useNavigate();
+
+    const handleLoginClick = () => {
+      navigate('/login');
+    };
 
   return (
     <div className="header fixed  container-fluid d-flex align-items-center">
@@ -23,7 +25,9 @@ const Header = () => {
           src={laptopPersonRegular}>
           </img>
         <div className="contenedor-button">
-          < Button text="Banca en Línea" onClick={handleButtonClick} className="custom-button"/>
+          <button onClick={handleLoginClick} className = "custom-button">
+          Banca en Línea
+          </button> 
         </div>
       </div>
       
@@ -31,5 +35,4 @@ const Header = () => {
   );
 };
 
-//
 export default Header;
