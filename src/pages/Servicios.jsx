@@ -26,10 +26,10 @@ const Servicios = () => {
              
                 <div className=" turquesa_container ">                
                   <div className='transf_container'>
-                    <h2 className='titulo_servicioTurquesa'>Transferencias sin Comisiones</h2>                                       
+                    <h2 className='titulo_servicioTurquesa'>Transferencias sin Comisiones</h2> <br />                                     
                     <p> El Banco Universitario ofrece un servicio de transferencias entre 
                           estudiantes sin costo alguno, con el objetivo de facilitar el intercambio de
-                          dinero entre los estudiantes universitario.
+                          dinero entre los estudiantes universitario. <br />
                           Transferir dinero de manera rápida, segura y eficiente, lo que permite a los 
                           estudiantes contar con una alternativa más para realizar sus pagos y transacciones.</p>
                 </div>     
@@ -40,7 +40,7 @@ const Servicios = () => {
             <div className="blanco_container" >
             <img src={deposito} className="img_blanco"/>
               <div className='deposito_container'>
-              <h2 className='titulo_servicio'>Depósitos en Efectivo</h2>                
+              <h2 className='titulo_servicio'>Depósitos en Efectivo</h2> <br />               
                 <p> Depósitos en efectivo de manera sencilla y cómoda en cualquiera de sus sucursales. 
                 Este servicio está disponible las 24 horas del día, los 7 días de la semana, lo que 
                 permite a los estudiantes realizar sus depósitos en cualquier momento que lo necesiten.</p>
@@ -51,7 +51,7 @@ const Servicios = () => {
 
               <div className="turquesa_container">              
                     <div className='retiro_container'>
-                      <h2 className='titulo_servicioTurquesa'>Retiros en Efectivo</h2>                      
+                      <h2 className='titulo_servicioTurquesa'>Retiros en Efectivo</h2> <br />                     
                       <p> Realizar retiros en efectivo de manera rápida y segura. Los estudiantes pueden realizar 
                         retiros en cualquiera de las sucursales del banco, con la tranquilidad de que sus fondos 
                         están seguros y protegidos.</p>

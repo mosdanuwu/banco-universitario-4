@@ -24,12 +24,12 @@ export default function Contacto () {
                 <div className= "contenido_contactos">
                      <p className='leyenda'>Dispones de los siguientes medios de comunicación para trasmitir tus sugerencias
                       o solicitar mayor información sobre nuestros servicios.
-                      </p>
+                      </p> <br />
                       
                       <div className='contactos_info'>
                         <div className="contactos">
                             <h6>Teléfono</h6> 
-                            <p> +58 212 555-5555</p>                                                                           
+                            <p> +58 212 555-5555</p><br />                                                                      
                         </div>  
                         <img className='img_contacto'
                             src={soporte}/> 
@@ -38,7 +38,7 @@ export default function Contacto () {
                       <div className='contactos_info'>
                         <div className="contactos">
                         <h6>Fax</h6> 
-                          <p> +58 212 555-5555</p>                         
+                          <p> +58 212 555-5555</p><br />                       
                         </div>
                         <img src={fax} className='img_contacto'/>
                         </div>
@@ -46,14 +46,14 @@ export default function Contacto () {
                         <div className='contactos_info'>
                         <div className="contactos">
                         <h6>Correo Electrónico</h6> 
-                          <p > info@bancouniversitario.com.ve</p>
+                          <p > info@bancouniversitario.com.ve</p> <br />
                         </div>
                         <img src={gmail} className='img_contacto'/>
                         </div>
 
                         <div className='contactos_info'>
                         <div className='contactos'>
-                        <h6>Redes Sociales</h6>
+                        <h6>Redes Sociales</h6> <br />
                         </div>    
 
                           
