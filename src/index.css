@@ -15,13 +15,16 @@
     font-weight: 700;
     font-style: normal;
   }
-  
-  
-  .container_body{
-    background-color: #085A4C;
-    font-family: 'MontserratAlternates', sans-serif;
-  }
 
+  body, h1, h2, h3, h4, h5, h6, p, a, input, button 
+  { 
+    font-family: 'MontserratAlternates', sans-serif !important;
+  }
+.container_body{
+      background-color: #085A4C;
+      font-family: 'MontserratAlternates', sans-serif;
+    }
+  
   .container_tac{
     background-color: #67C7C1;
     font-family: 'MontserratAlternates', sans-serif;
@@ -42,9 +45,10 @@
     font-style:inherit;
   }
 
-  
+
   .container_s{
     font-family: 'MontserratAlternates', sans-serif;
     font-weight: 400;
     font-style:inherit;
   }
+

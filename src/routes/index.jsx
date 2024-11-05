@@ -12,11 +12,11 @@ function Routers() {
     <Router>
       <Routes>
         <Route path="/" element={<Inicio/>} />
-        <Route path="/Nosotros" element={<Nosotros/>} />
-        <Route path="/Servicios" element={<Servicios/>} />
-        <Route path="/Contacto" element={<Contacto/>} />
+        <Route path="/nosotros" element={<Nosotros/>} />
+        <Route path="/servicios" element={<Servicios/>} />
+        <Route path="/contacto" element={<Contacto/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/Registro" element={<Registro/>}/>
+        <Route path="/registro" element={<Registro/>} />
       </Routes>
     </Router>
   )
