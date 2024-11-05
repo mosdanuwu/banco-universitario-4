@@ -37,7 +37,6 @@ export default function Contacto () {
                             <img src={twitter} className='center-text'/>
                             <img src={instagram} className='center-text'/>
                           </div>
-
                 
             </div>
               

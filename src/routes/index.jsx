@@ -5,6 +5,7 @@ import Nosotros from '../pages/Nosotros'
 import Servicios from '../pages/Servicios'
 import Contacto from '../pages/Contacto'
 import Login from '../pages/Login'
+import Registro from '../pages/Registro'
 
 function Routers() {
   return (
@@ -15,6 +16,7 @@ function Routers() {
         <Route path="/Servicios" element={<Servicios/>} />
         <Route path="/Contacto" element={<Contacto/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/Registro" element={<Registro/>}/>
       </Routes>
     </Router>
   )
