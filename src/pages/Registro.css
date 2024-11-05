@@ -1,0 +1,26 @@
+.btn-custom-primary {
+    background: linear-gradient(to top, #085F63 13%, hsl(179, 55%, 36%) 70%, #49BEB7 100%) !important; 
+    color: white; 
+    border: none !important;
+}
+
+.btn-custom-primary:hover {
+    background: linear-gradient(to top, #0b7a80  13%, #34b3b0 70%, #57e2d9 100%) !important; 
+    
+}
+
+.btn-custom-outline{
+    border-color: #085F63 !important;
+    color: #085F63 !important;
+    border: 2px solid !important;
+}
+
+.btn-custom-outline:hover {
+    background-color: #085F63 !important; /* Cambia el color de fondo al hacer hover */
+    color: #fff !important; /* Cambia el color del texto al hacer hover */
+  }
+
+.header-section-registro{
+    background-color: #49BEB7;
+    color: #fff;
+}
