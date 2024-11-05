@@ -4,6 +4,7 @@
     text-align: center;
     margin-top: 10px;
     color: #085F63;
+    font-family: 'MontserratAlternates', sans-serif;
 }
 
 /*containers turquesas*/
@@ -14,17 +15,20 @@
     background-color: #49BEB7;
     width: 100%;
     margin: 0 auto;
+    font-family: 'MontserratAlternates', sans-serif;
    
 }
 .titulo_servicioTurquesa{
     text-align: left;
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: -40px;
+    font-family: 'MontserratAlternates', sans-serif;
 
 }
 .img_turquesa{
     max-width: 300px;
     margin: 50px;
+    margin-right: 200px;
     
     
 }
@@ -37,6 +41,7 @@
     background-color: white;
     width: 100%;
     margin: 0 auto;
+    font-family: 'MontserratAlternates', sans-serif;
 
 }
 .titulo_servicio{
@@ -44,10 +49,12 @@
     color: #085F63;
     margin-right: 550px;
     margin-top: 20px;
+    font-family: 'MontserratAlternates', sans-serif;
 }
 .img_blanco{
     max-width: 300px;
     margin: 50px;
+   
 }
 
 
