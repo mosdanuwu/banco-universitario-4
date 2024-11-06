@@ -1,5 +1,5 @@
 import React,  { useState } from 'react'
-import './Header.css'
+import './Header1.css'
 //import Button from '../Button/Button.jsx'
 import Logo from '../../assets/images/logo-no-background.png'
 import laptopPersonRegular from '../../assets/icons/laptop-person-regular.svg'
