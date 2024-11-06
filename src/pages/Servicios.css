@@ -16,6 +16,7 @@
     width: 100%;
     margin: 0 auto;
     font-family: 'MontserratAlternates', sans-serif;
+    padding: 20px;
    
 }
 .titulo_servicioTurquesa{
@@ -42,6 +43,7 @@
     width: 100%;
     margin: 0 auto;
     font-family: 'MontserratAlternates', sans-serif;
+    padding: 20px;
 
 }
 .titulo_servicio{
@@ -94,3 +96,94 @@ blanco*/
     text-justify: inter-word;
 }
 
+/* Media Queries */
+
+/* xs - Menos de 576px */
+@media (max-width: 575px) {
+    .turquesa_container, .blanco_container {
+        flex-direction: column; /* Cambiar el diseño a columna */
+        text-align: center; /* Centrar los textos */
+        padding: 10px; /* Reducir espacio */
+        max-width:100%;
+    }
+
+    .titulo_servicio, .titulo_servicioTurquesa {
+        text-align: center; /* Centrar los títulos */
+        margin: 10px 0;
+    }
+
+    .img_turquesa, .img_blanco {
+        max-width: 100%; /* Hacer las imágenes más pequeñas */
+        margin: 0 auto;
+    }
+
+    .transf_container, .retiro_container, .beca_container, .deposito_container, .matricula_container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px; /* Añadir margen entre las secciones */
+    }
+}
+
+/* sm - 576px y más */
+@media (min-width: 576px) {
+    .turquesa_container, .blanco_container {
+        flex-direction: row; /* Volver a la disposición en fila */
+        padding: 20px;
+    }
+
+    .img_turquesa, .img_blanco {
+        max-width: 250px;
+        margin: 20px;
+    }
+
+    .transf_container, .retiro_container, .beca_container, .deposito_container, .matricula_container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* md - 768px y más */
+@media (min-width: 768px) {
+    .img_turquesa, .img_blanco {
+        max-width: 300px;
+    }
+
+    .transf_container, .retiro_container, .beca_container, .deposito_container, .matricula_container {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+/* lg - 992px y más */
+@media (min-width: 992px) {
+    .turquesa_container, .blanco_container {
+        flex-direction: row; /* Mantener el diseño en fila */
+    }
+
+    .img_turquesa, .img_blanco {
+        max-width: 350px;
+    }
+
+    .titulo_servicio, .titulo_servicioTurquesa {
+        margin-left: 40px;
+        margin-top: -40px;
+    }
+}
+
+/* xl - 1200px y más */
+@media (min-width: 1200px) {
+    .img_turquesa, .img_blanco {
+        max-width: 400px;
+    }
+
+    .titulo_servicio, .titulo_servicioTurquesa {
+        margin-left: 50px;
+    }
+}
+
+/* xxl - 1400px y más */
+@media (min-width: 1400px) {
+    .img_turquesa, .img_blanco {
+        max-width: 450px;
+    }
+}

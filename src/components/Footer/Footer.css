@@ -4,8 +4,10 @@
 
 
     color:#363940;
+    
+    .custom-list h5{
+        font-weight: 600;
+    }
 }
 
-.card-list{
-    list-style: '';
-}
+

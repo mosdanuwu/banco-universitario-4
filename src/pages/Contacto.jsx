@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
 import faceimag from '../assets/images/Facebook.png';
 import twitter from '../assets/images/TwitterX.png';
 import instagram from '../assets/images/Instagram.png';
@@ -15,7 +14,6 @@ export default function Contacto () {
   return (
     <>
     <Header/>
-    <Navbar/>
           <div  className= "contacto_container">
             <div className='titulo_contactos'>
                <h1 className="titulo_cont">Contáctos</h1>
@@ -60,7 +58,7 @@ export default function Contacto () {
                       </div>   
 
                       <p className= "rrss"> @bancouniversitariove</p>
-                      <div className="col-6 col-md-12 image-container center-text">
+                      <div className="col-xs col-6 col-md-12 image-container align-items justify-content">
                             <img src={faceimag} className='redes_icons'/>
                             <img src={twitter} className='redes_icons'/>
                             <img src={instagram} className='redes_icons'/>

@@ -1,34 +1,84 @@
-/* Logo: tamaño ajustable */
-.logo {
-    height: 40px;
-  }
+.navbar-custom {
+
+  font-size: normal !important;
+  font-weight: bold;
   
-  @media (min-width: 768px) {
-    /* En pantallas medianas o más grandes, aumenta el tamaño del logo */
-    .logo {
-      height: 50px;
-    }
+  a {
+      color: #085F63 !important;
   }
-  
-  /* Media query para dispositivos móviles */
-  @media (max-width: 767px) {
-    /* Centraliza el logo y los links */
-    .navbar-brand {
+
+  a:hover {
+      color: #085A4C !important;
+  }
+
+  .navbar-info {
+      background-color: #49BEB7 !important;
+      padding: 0 10em !important;
+      color: #000000;
       display: flex;
-      justify-content: center;
-      width: 100%;
-    }
+      justify-content: space-evenly;
+      padding: 1em !important;
+  }
   
-    /* Centraliza el botón de "Banca en Línea" */
-    .btn {
-      margin: 0 auto;
-      display: block;
-      width: 100%;
-      max-width: 200px; /* Ancho máximo del botón en móviles */
+  .navbar-main {
+    background: white;
+    padding: 3vh 10vw;
+
+    .navbar-menu {
+        display: flex;
+        justify-content: space-evenly;
+        background: white;
+        flex-basis: 40em;
     }
+}
   
-    /* Oculta el ícono de Laptop en pantallas pequeñas */
-    .d-md-block {
-      display: none !important;
+  .navbar-btn {
+    background-color: #49BEB7;
+    color: #000000;
+    border-radius: 1.2em;
+    border: none;
+    padding: 0.6em 2em 0.6em 0.2em;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+
+    .banca-btn-icon {
+        color: #000000;
+        background-color: none;
+        padding: 0.2em;
+        margin: 0 0.2em;
+        
+    }
+
+     
+     &:hover {
+      background-color: #0d8d78; 
+      color: #000000; 
+}
+}
+}
+
+@media (max-width: 1272px) {
+
+  .navbar-main {
+      padding: 5vh 3vw !important;
+  }
+}
+
+
+@media (min-width:280px) and (max-width: 429px) {
+    .navbar-brand img {
+      width: 150px; 
+    }
+  }
+
+  @media (max-width: 280px) {
+    
+    .navbar-toggler-custom{
+        width: 10px; 
+        height: 10px; 
     }
   }
