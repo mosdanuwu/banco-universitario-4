@@ -9,88 +9,52 @@
 
 /*containers turquesas*/
 .turquesa_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #49BEB7;
-    width: 100%;
-    margin: 0 auto;
     font-family: 'MontserratAlternates', sans-serif;
-   
+    text-align: justify;
+    @media (max-width: 500px){
+        padding: 10%;
+        margin: 5px;
+    }
+    
 }
 .titulo_servicioTurquesa{
     text-align: left;
-    margin-left: 40px;
-    margin-top: -40px;
+    margin-top: 100px;
     font-family: 'MontserratAlternates', sans-serif;
-
+    
 }
 .img_turquesa{
     max-width: 300px;
-    margin: 50px;
-    margin-right: 200px;
-    
-    
+    margin-top: 50px;
+    margin-bottom: 50px;    
 }
 
 /*containers blancos*/
 .blanco_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: white;
-    width: 100%;
-    margin: 0 auto;
     font-family: 'MontserratAlternates', sans-serif;
-
+    text-align: justify;
+    @media (max-width: 500px){
+        padding: 10%;
+        margin: 5px;
+    }
+    
 }
 .titulo_servicio{
-    text-align: right;
+    text-align: left;
     color: #085F63;
-    margin-right: 550px;
-    margin-top: 20px;
+    margin-top: 100px;
     font-family: 'MontserratAlternates', sans-serif;
 }
 .img_blanco{
     max-width: 300px;
-    margin: 50px;
-   
+    margin-top: 50px;
+    margin-bottom: 50px;  
+    @media (max-width: 500px){
+        margin-bottom: 10px;
+    }
+    
 }
 
-
-/*margenes parrafos
-turquesa*/
-.transf_container{
-    margin-left: 75px;
-    margin-right: 200px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-.retiro_container{
-    margin-left: 75px;
-    margin-right: 200px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-.beca_container{
-    margin-left: 75px;
-    margin-right: 200px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/*margenes parrafos
-blanco*/
-.deposito_container{
-    margin-right: 75px;
-    margin-left: 200px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-.matricula_container{
-    margin-right: 75px;
-    margin-left: 200px;
-    text-align: justify;
-    text-justify: inter-word;
-}
 
