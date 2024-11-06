@@ -20,6 +20,7 @@ mision y vision*/
     display: flex;
     gap: 10px;
 
+
     @media (min-width: 640px) {
         padding: 20px 10px;
       }
@@ -27,21 +28,62 @@ mision y vision*/
       @media (min-width: 1024px) {
         padding: 20px 20px;
       }
+     
  
 }
 
 .mision_title{
-  font-size: 2rem;
-  margin-bottom: 25px;
+  font-size: 3rem;
+  margin-bottom: 100px;
+  transform: translate(360px,30px);
+ 
+  
+  
+}
+.vision_title{
+  font-size: 3rem;
+  margin-bottom: 100px;
+  transform: translate(310px,30px);
+
+  
 }
 
 .mision_parrafo{
   line-height: 1.7;
+  margin-bottom: -150px;
+  text-align:left;
+  
+}
+.vision_parrafo{
+  line-height: 1.7;
+  margin-bottom: -150px;
+  text-align:left;
+  
 }
 
-.img_nosotros{
+.img_mision{
   display: grid;
   border: #085F63;
+  position: absolute; 
+  top: 50px; 
+  left: 50px; 
+  transform: translate(350px, 290px); 
+  width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+   height: auto;
+   margin-top: 10px;
+
+}
+.img_vision{
+  display: grid;
+  border: #085F63;
+  position: absolute; 
+  top: 50px; 
+  left: 50px; 
+  transform: translate(1099px, 290px); 
+  width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+   height: auto;
+   margin-top: 10px;
+
 }
 /*container de objetivos*/
 .objetivos_container{
@@ -66,6 +108,7 @@ titulo*/
 .obj_img{
   width: 400px;
   margin-right: 50px;
+ 
 }
 .cont::before {
   content: "• "; 

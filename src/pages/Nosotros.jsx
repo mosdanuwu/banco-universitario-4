@@ -14,13 +14,13 @@ export default function Nosotros ()  {
      <Navbar/>
 
      
-          <div  className= "align-items-center justify-content-center ">
+          <div  className= "align-items-center justify-content-center "><br />
              <h1 className='title_nosotros'>¿Quienes somos nosotros?</h1>
              <br/>
               <div className="mision_container "> 
 
                     <h2  className='mision_title'> Mision</h2> 
-                    <img className='img_nosotros' 
+                    <img className='img_mision' 
                     src={mision} />
                     <p  className='mision_parrafo'> Somos una institución financiera comprometida con 
                     los estudiantes universitarios, brindando soluciones 
@@ -29,7 +29,7 @@ export default function Nosotros ()  {
                     y personal de nuestros clientes.</p>
 
                     <h2  className='vision_title'> Vision</h2> 
-                    <img className='img_nosotros'
+                    <img className='img_vision'
                     src={vision}/>
                     <p  className='vision_parrafo'> Queremos ser la mejor opción financiera para estudiantes
                       universitarios en el país. Deseamos ser reconocidos por 

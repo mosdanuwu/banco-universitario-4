@@ -66,11 +66,7 @@ export default function Contacto () {
                             <img src={instagram} className='redes_icons'/>
                           </div>    
                 </div>
-                    <div className="col-6 col-md-12 image-container center-text">
-                            <img src={faceimag} className='center-text'/>
-                            <img src={twitter} className='center-text'/>
-                            <img src={instagram} className='center-text'/>
-                          </div>
+                    
                 
             </div>
               
