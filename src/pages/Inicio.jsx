@@ -11,6 +11,7 @@ const Home=()=>{
     return(
         <>
         <Header/>
+        
         <Navbar/>
         <div className="container_body container-fluid d-flex align-items-center justify-content-center text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
