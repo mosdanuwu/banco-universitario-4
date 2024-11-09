@@ -9,70 +9,10 @@ import './Nosotros.css';
 
 export default function Nosotros() {
   return (
+   
+     
     <>
-      <Header />
-
-      <div className="align-items-center justify-content-center">
-        <h1 className='title_nosotros'>¿Quienes somos nosotros?</h1>
-        
-        <div className="mision_container">
-          <Container fluid>
-            <Row className="justify-content-center">
-            <h2 className='mision_title'>Misión</h2>
-              <Col xs={12} lg={6} className="d-flex justify-content-center">
-                <img className='img_nosotros' src={mision} alt="Misión" />
-              </Col>
-              <Col xs={12} lg={6} className="d-flex align-items-center">
-                <p className='mision_parrafo'>
-                  Somos una institución financiera comprometida con los estudiantes universitarios, 
-                  brindando soluciones financieras ágiles y eficientes. 
-                  Nuestra misión es facilitar la gestión de sus recursos 
-                  y contribuir al crecimiento económico y personal de nuestros clientes.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-
-        <div className="vision_container">
-          <h2 className='vision_title'>Visión</h2>
-          <Container fluid>
-            <Row className="justify-content-center">
-              <Col xs={12} lg={6} className="d-flex justify-content-center">
-                <img className='img_nosotros' src={vision} alt="Visión" />
-              </Col>
-              <Col xs={12} lg={6} className="d-flex align-items-center">
-                <p className='vision_parrafo'>
-                  Queremos ser la mejor opción financiera para estudiantes universitarios en el país. Deseamos ser reconocidos por nuestros servicios innovadores, la calidad de atención al cliente y nuestro compromiso con la educación y el desarrollo social.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-
-        <div className="objetivos_container">
-          <h1 className='objetivos_title'>Objetivos</h1>
-          <Container fluid>
-            <Row className="justify-content-center">
-              <Col xs={12} lg={6} className="objetivos_content">
-                <p className='cont'>Brindar a los estudiantes universitarios un servicio eficiente y de calidad en la gestión de sus recursos financieros, a través de nuestros canales digitales y nuestros puntos de atención presencial.</p>
-                <p className='cont'>Fomentar el uso de nuestras plataformas digitales para hacer transferencias entre estudiantes sin comisión, depósitos y retiros en efectivo, ofreciendo herramientas tecnológicas fáciles y seguras.</p>
-                <p className='cont'>Promover la educación financiera de los estudiantes universitarios, a través de charlas, talleres y capacitaciones sobre temas como el ahorro, la inversión y el uso responsable del crédito.</p>
-                <p className='cont'>Establecer alianzas estratégicas con universidades y empresas para ofrecer beneficios exclusivos a nuestros clientes, tales como descuentos en matrículas, becas, prácticas laborales, entre otros.</p>
-                <p className='cont'>Mantener una cultura de innovación y mejora continua en nuestros procesos, productos y servicios, para estar siempre a la vanguardia de las necesidades de nuestros clientes y del mercado.</p>
-              </Col>
-              <Col xs={12} lg={6} className="d-flex justify-content-center">
-                <img src={objetivos} className='obj_img' alt="Objetivos" />
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </div>
-
-      <Footer />
-    {/**<Header/>
-     <Navbar/>
-
+    <Header/>
                 <div className='bg-white'>
 
                   <div ><br />
@@ -163,9 +103,70 @@ export default function Nosotros() {
          
     
     
-    <Footer/> */} 
+    <Footer/> 
     </>
   );
 }
 
+ {/** 
+      <Header />
+
+      <div className="align-items-center justify-content-center">
+        <h1 className='title_nosotros'>¿Quienes somos nosotros?</h1>
+        
+        <div className="mision_container">
+          <Container fluid>
+            <Row className="justify-content-center">
+            <h2 className='mision_title'>Misión</h2>
+              <Col xs={12} lg={6} className="d-flex justify-content-center">
+                <img className='img_nosotros' src={mision} alt="Misión" />
+              </Col>
+              <Col xs={12} lg={6} className="d-flex align-items-center">
+                <p className='mision_parrafo'>
+                  Somos una institución financiera comprometida con los estudiantes universitarios, 
+                  brindando soluciones financieras ágiles y eficientes. 
+                  Nuestra misión es facilitar la gestión de sus recursos 
+                  y contribuir al crecimiento económico y personal de nuestros clientes.
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
+        <div className="vision_container">
+          <h2 className='vision_title'>Visión</h2>
+          <Container fluid>
+            <Row className="justify-content-center">
+              <Col xs={12} lg={6} className="d-flex justify-content-center">
+                <img className='img_nosotros' src={vision} alt="Visión" />
+              </Col>
+              <Col xs={12} lg={6} className="d-flex align-items-center">
+                <p className='vision_parrafo'>
+                  Queremos ser la mejor opción financiera para estudiantes universitarios en el país. Deseamos ser reconocidos por nuestros servicios innovadores, la calidad de atención al cliente y nuestro compromiso con la educación y el desarrollo social.
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
+        <div className="objetivos_container">
+          <h1 className='objetivos_title'>Objetivos</h1>
+          <Container fluid>
+            <Row className="justify-content-center">
+              <Col xs={12} lg={6} className="objetivos_content">
+                <p className='cont'>Brindar a los estudiantes universitarios un servicio eficiente y de calidad en la gestión de sus recursos financieros, a través de nuestros canales digitales y nuestros puntos de atención presencial.</p>
+                <p className='cont'>Fomentar el uso de nuestras plataformas digitales para hacer transferencias entre estudiantes sin comisión, depósitos y retiros en efectivo, ofreciendo herramientas tecnológicas fáciles y seguras.</p>
+                <p className='cont'>Promover la educación financiera de los estudiantes universitarios, a través de charlas, talleres y capacitaciones sobre temas como el ahorro, la inversión y el uso responsable del crédito.</p>
+                <p className='cont'>Establecer alianzas estratégicas con universidades y empresas para ofrecer beneficios exclusivos a nuestros clientes, tales como descuentos en matrículas, becas, prácticas laborales, entre otros.</p>
+                <p className='cont'>Mantener una cultura de innovación y mejora continua en nuestros procesos, productos y servicios, para estar siempre a la vanguardia de las necesidades de nuestros clientes y del mercado.</p>
+              </Col>
+              <Col xs={12} lg={6} className="d-flex justify-content-center">
+                <img src={objetivos} className='obj_img' alt="Objetivos" />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+
+      <Footer />*/} 
 
