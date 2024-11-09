@@ -15,151 +15,28 @@
 .leyenda{
     text-align: center;
     margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: justify;
     text-justify: inter-word;
 }
 
 /*imformacion contactos*/
 .contactos_info{  
-    justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
-    display: flex;
-    width: 100%;
     
 }
 .cont_banco{
-    display: block;
+    
 }
 .contactos{
-    margin-left: 500px;
     margin-top: 15px;
     text-align: justify;
     text-justify: inter-word;
-    margin-right: 200px;
-}
-
-.img_contacto{
-    margin-right: 580px;
-    max-width: 100px;
+    display: inline;
 }
 
 .rrss{
     text-align: center;
 }
-
-/* Media Queries */
-
-/* Desktop mediano: ≤1493px */
-@media (max-width: 1493px) {
-    .titulo_cont {
-        font-size: 2rem;
-    }
-
-    .leyenda {
-        font-size: 1.5rem;
-    }
-
-    .contactos_info {
-        width: 30%;
-        font-size: 1.5rem;
-    }
-
-    .contactos {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 1.5rem;
-    }
-
-    .img_contacto {
-        margin-right: 0;
-        font-size: 1.5rem;
-    }
-}
-
-/* Tablets: ≤992px */
-@media (max-width: 992px) {
-    .titulo_cont {
-        font-size: 2rem;
-    }
-
-    .leyenda {
-        font-size: 1.6rem;
-        max-width: 70%;
-        margin: auto;
-    }
-
-    .contactos_info {
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
-        text-align: center;
-        font-size: 1.6rem;
-    }
-
-    .contactos {
-        max-width: 100%;
-        font-size: 1.6rem;
-        margin: 10px 0;
-    }
-
-    .img_contacto {
-        margin-top: 10px;
-        max-width: 80px;
-    }
-
-    .titulo_contactos {
-        height: 80px;
-        font-size: 1.6rem;
-    }
-
-    .rrss {
-        font-size: 1.6rem;
-    }
-}
-
-/* Móviles: ≤768px */
-@media (max-width: 768px) {
-    .titulo_cont {
-        font-size: 1.4rem;
-    }
-
-    .leyenda {
-        font-size: 0.9rem;
-        padding: 0 10px;
-    }
-
-    .contactos_info {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .contactos {
-        max-width: 100%;
-        margin: 0;
-        font-size: 0.85rem;
-        text-align: center;
-    }
-
-    .img_contacto {
-        max-width: 60px;
-        margin-top: 10px;
-    }
-
-    .titulo_contactos {
-        height: 70px;
-    }
-
-    .rrss {
-        font-size: 0.9rem;
-    }
-
-    .redes_icons {
-        max-width: 50px;
-        margin: 5px;
-        
-    }
-}
+h6 {
+    font-weight: bold;
+  }
