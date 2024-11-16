@@ -65,7 +65,7 @@ const Footer=()=>{
           <div className="col-xs-12 col-md-6 col-lg-3 mb-3">
             <h5>Contacto</h5>
             <ul className="card-list" >
-              <li><a href="mailto:info@bancouniversitario.com.ve" 
+              <li><a href="mailto:info@bancouniversitario.com.ve"  
                   >
                   info@bancouniversitario.com.ve
                   </a>
@@ -77,13 +77,13 @@ const Footer=()=>{
           </div>
           
             <div className="col-xs-12 col-md-6 col-lg-3 d-flex justify-content-center py-5">
-              <a href="https://facebook.com/bancouniversitario" className="text-dark mx-2">
+              <a href="https://facebook.com/bancouniversitario" className="text-dark mx-2" target='_black'>
                 <FontAwesomeIcon icon={faFacebook} size="lg" alt="@bancouniversitario" />
               </a>
-              <a href="https://twitter.com/bancouniversitario" className="text-dark mx-2">
+              <a href="https://twitter.com/bancouniversitario" className="text-dark mx-2" target='_black'>
                 <FontAwesomeIcon icon={faSquareXTwitter} size="lg" alt="@bancouniversitario" />
               </a>
-              <a href="https://instagram.com/bancouniversitario" className="text-dark mx-2">
+              <a href="https://instagram.com/bancouniversitario" className="text-dark mx-2" target='_black'>
                 <FontAwesomeIcon icon={faInstagram} size="lg" alt="@bancouniversitario"/>
               </a>
           </div>

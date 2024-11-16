@@ -32,3 +32,9 @@
     background-position: center; /* Centra la imagen de fondo en el div */ 
     background-repeat: no-repeat; /* Evita que la imagen fondo se repita en el div */
   }
+  
+  *{
+    margin: 0; 
+    padding: 0;
+     box-sizing:border-box;
+  }

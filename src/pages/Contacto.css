@@ -24,14 +24,13 @@
     margin: 0 auto;
     
 }
-.cont_banco{
-    
-}
+
 .contactos{
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: justify;
     text-justify: inter-word;
     display: inline;
+
 }
 
 .rrss{
@@ -39,4 +38,10 @@
 }
 h6 {
     font-weight: bold;
+  }
+
+  *{
+    margin: 0; 
+    padding: 0;
+     box-sizing:border-box;
   }

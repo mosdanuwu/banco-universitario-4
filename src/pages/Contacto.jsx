@@ -30,7 +30,7 @@ export default function Contacto () {
                       
                       <div className='contactos_info'>
                         <div className="row">
-                          <div className="col-md-4 col-2 col-sm-2">
+                          <div className="col-md-4 col-12 col-sm-12">
                             <div className="contactos">
                                 <h6>Teléfono</h6> 
                                 <p> +58 212 555-5555</p><br />                                                                      
@@ -87,7 +87,7 @@ export default function Contacto () {
 
                       <h6>Redes Sociales</h6> <br />
                       <p className= "rrss"> @bancouniversitariove</p>
-                      <div className="col-6 col-md-12 image-container center-text">
+                      <div className="col-12 col-md-12 image-container center-text">
                             <img src={faceimag} className='redes_icons'/>
                             <img src={twitter} className='redes_icons'/>
                             <img src={instagram} className='redes_icons'/>
