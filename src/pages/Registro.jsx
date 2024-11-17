@@ -65,7 +65,7 @@ const Registro = () =>  {
           </div>
           {/* Confirmar Contraseña */}
           <div className="col-md-6 mb-3">
-            <label htmlFor="confirmPassword" className="form-label">Contraseña</label>
+            <label htmlFor="confirmPassword" className="form-label">Confirmar Contraseña</label>
             <input type="password" className="form-control" id="confirmPassword" placeholder="Ingresa nuevamente tu contraseña" />
           </div>
         </div>
