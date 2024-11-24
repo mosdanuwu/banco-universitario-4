@@ -1,6 +1,6 @@
 // src/Registro.jsx
 import React from 'react'
-import Logo from '.././assets/icons/logo-principal-header.svg'
+import Logo from '.././assets/images/logo-no-background.png'
 import {Link, useNavigate} from 'react-router-dom'
 import './Registro.css'
 
@@ -65,7 +65,7 @@ const Registro = () =>  {
           </div>
           {/* Confirmar Contraseña */}
           <div className="col-md-6 mb-3">
-            <label htmlFor="confirmPassword" className="form-label">Contraseña</label>
+            <label htmlFor="confirmPassword" className="form-label">Confirmar Contraseña</label>
             <input type="password" className="form-control" id="confirmPassword" placeholder="Ingresa nuevamente tu contraseña" />
           </div>
         </div>

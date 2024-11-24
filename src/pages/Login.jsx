@@ -4,7 +4,7 @@ import imagenEstudiantes from '.././assets/images/img-universitarios-login.png'
 import imagenWallet from '.././assets/images/img-wallet-login.png'
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import {faEye, faEyeSlash } from '@fortawesome/free-brands-svg-icons'
-import Logo from '.././assets/icons/logo-principal-header.svg'
+import Logo from '.././assets/images/logo-no-background.png'
 import './Login.css'
 
 export default function Login () {

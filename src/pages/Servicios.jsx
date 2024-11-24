@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
 import transferencia from "../assets/images/transferencia.png";
 import deposito from "../assets/images/deposito.png";
 import retiro from "../assets/images/retiro.png";
@@ -17,7 +16,6 @@ const Servicios = () => {
 
     <>
       <Header/>
-      <Navbar/>
 
       <div className="servicios_container">
         <div className="servicios_c">

@@ -57,4 +57,46 @@
     
 }
 
+/*
+/*margenes parrafos
+turquesa*/
+.transf_container{
+    margin-left: 75px;
+    margin-right: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.retiro_container{
+    margin-left: 75px;
+    margin-right: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.beca_container{
+    margin-left: 75px;
+    margin-right: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*margenes parrafos
+blanco*/
+.deposito_container{
+    margin-right: 75px;
+    margin-left: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.matricula_container{
+    margin-right: 75px;
+    margin-left: 200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+     box-sizing:border-box;
+  }
 

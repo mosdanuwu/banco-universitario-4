@@ -20,8 +20,8 @@
   { 
     font-family: 'MontserratAlternates', sans-serif !important;
   }
-.container_body{
-      background-color: #085A4C;
+.container_body_home{
+      background-color: #085F63;
       font-family: 'MontserratAlternates', sans-serif;
     }
   
@@ -52,3 +52,8 @@
     font-style:inherit;
   }
 
+*{
+  margin: 0; 
+  padding: 0;
+   box-sizing:border-box;
+}
