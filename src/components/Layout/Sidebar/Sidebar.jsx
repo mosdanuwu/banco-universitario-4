@@ -10,13 +10,13 @@ const Sidebar= () =>{
         
         <div className="Sidebar">
             <ul>
-                <li><Link to="#">Movimientos</Link></li>
+                <li><Link to="#" className='text-white'>Movimientos</Link></li>
             </ul>
             <ul>
-                <li><Link to="#">Transferencia</Link></li>
+                <li><Link to="#" className='text-white'>Transferencia</Link></li>
             </ul>
             <ul>
-                <li><Link to="#">Contactos</Link></li>
+                <li><Link to="#" className='text-white'>Contactos</Link></li>
             </ul>
         
 

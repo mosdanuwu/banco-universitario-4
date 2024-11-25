@@ -6,7 +6,7 @@ padding: 0;
 .Sidebar{
 
     display: flex;
-    background-color: #27bba0;
+    background: #085F63;
     width: 14rem;
     height: 100vh;
     border-right: 1px solid;
