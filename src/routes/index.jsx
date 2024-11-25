@@ -6,6 +6,7 @@ import Servicios from '../pages/Servicios'
 import Contacto from '../pages/Contacto'
 import Login from '../pages/Login'
 import Registro from '../pages/Registro'
+import Welcome from '../pages/Application/Welcome'
 
 function Routers() {
   return (
@@ -17,6 +18,7 @@ function Routers() {
         <Route path="/contactos" element={<Contacto/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Registro/>} />
+        <Route path="/application/welcome" element={<Welcome/>} />
       </Routes>
     </Router>
   )

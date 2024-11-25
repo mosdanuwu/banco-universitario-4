@@ -1,15 +1,28 @@
 import React from "react";
-import {Link} from 'react-router-dom'
-import './Welcome.css'
+import NavbarApp from '../../components/Layout/NavbarApp/NavbarApp';
+import Sidebar from "../../components/Layout/Sidebar/Sidebar";
 
-const Welcome=()=> {
+import './Welcome.css';
+
+
+function Welcome(){
 
     return(
+        
+        < div className="container-text">
+              <NavbarApp/>
+              <div className="flex">
+                <Sidebar/>
+                <div className="contenido">
 
-        <div className="principal-container">
-            <h1 className="welcome-title" style={{ color: 'red' }}>¡Hola, !</h1>
-         
+                </div>
+              </div>
+
+            
+
         </div>
+
+    
 
     );
 

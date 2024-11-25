@@ -61,8 +61,9 @@ export default function Login () {
                         </button>
                       </div>
                   </div>
+
                   
-                  <button type="submit" className="btn btn-primary w-100 mb-3 
+                  <button  type="submit" className="btn btn-primary w-100 mb-3 
                     custom-btn" ><Link to= "/application/welcome" className='text-white'>Ingresar</Link></button>
                     <div className="text-center">
                       <p>¿Aún no tienes cuenta? <Link to="/registro">Crear cuenta</Link></p>
