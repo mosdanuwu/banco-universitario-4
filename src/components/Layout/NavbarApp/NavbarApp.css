@@ -6,10 +6,25 @@ padding: 0;
 .NavbarApp{
 
     display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 1rem 2rem;
-    padding-left: 0;
-    background-color: #219292;
-    height: 80px;
+    width: 1377px;
+    height: 101px;
+    top: 2px;
+    left: 68px;
+    gap: 0px;
+    opacity: 0px;
+    background: #FBFBFB;
+    margin-right: 20px
+
+}
+.NavbarApp .logo-no-background.png{
+    width: 30px;
+   height: 65.21px;
+    top: 17px;
+    left: 23px;
+    gap: 0px;
+    opacity: 0px;
+
+    
+ 
+    
 }
