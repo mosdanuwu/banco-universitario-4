@@ -1,0 +1,22 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+.NavbarApp{
+    display: flex;
+    width: 1377px;
+    height: 101px;
+    top: 2px;
+    left: 68px;
+    gap: 0px;
+    opacity: 0px;
+    background: #FBFBFB;
+    margin-right: 20px
+
+}
+.logo-no-background.png{
+    width: 30px;
+   height: 65.21px;
+
+}
