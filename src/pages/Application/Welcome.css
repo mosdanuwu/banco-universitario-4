@@ -1,1 +1,69 @@
 .continer-text { text-align: center; font-family: Arial, sans-serif; }
+
+.jumbo {
+    background-color: #49BEB7;
+    width: 39rem;
+    height: 14.4375rem;
+    top: -2px;
+    gap: 0px;
+    border-radius: 24px;
+    border: 2px;
+    opacity: 0px;
+    border: 2px solid #085F63;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 30px;
+    color: white;
+}
+
+.Saldo {
+    width: 227px;
+    height: 59px;
+    top: 23px;
+    left: 35px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat Alternates;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.TextJumbo{
+    width: 177px;
+    height: 24px;
+    top: 82px;
+    left: 35px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat Alternates;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24.38px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.numCuenta{
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+table > thead {
+    border: none;
+    border-bottom: 1px solid #5959597A;
+    border-collapse: collapse;
+}
+
+h4 {
+    font-weight: 800;
+}
