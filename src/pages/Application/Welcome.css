@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-.continer-text { text-align: center; font-family: Arial, sans-serif; }
+.continer-text { text-align: center;  }
 
 .jumbo {
     background-color: #49BEB7;
@@ -39,7 +38,7 @@
     left: 35px;
     gap: 0px;
     opacity: 0px;
-    font-family: Montserrat Alternates;
+   
     font-size: 15px;
     font-weight: 600;
     line-height: 24.38px;
@@ -47,16 +46,20 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
-
+.Cuenta{
+    text-align: right;
+    margin-left: 10px
+}
 .numCuenta{
     gap: 0px;
     opacity: 0px;
-    font-family: Montserrat Alternates;
+    
     font-size: 18px;
     font-weight: 500;
     line-height: 29.26px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    
 }
 
 table > thead {
@@ -68,17 +71,12 @@ table > thead {
 h4 {
     font-weight: 800;
 }
-=======
-*{
-    margin: 0;
-    padding: 0;
-    
+
+.copy-button{
+    background-color: transparent;
+    border:none;
+    .copy-icon{
+        color:white;
+    }
 }
 
-h1{
-    text-align: center;
-    padding-bottom:40px;
-    font-family: 'MontserratAlternates', sans-serif;
-    
-}
->>>>>>> 532439e85c44b6c0be0058a2aa05e92b1de6827b

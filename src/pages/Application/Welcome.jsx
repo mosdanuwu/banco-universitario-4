@@ -1,13 +1,14 @@
 import React from "react";
 import NavbarApp from '../../components/Layout/NavbarApp/NavbarApp';
 import Sidebar from "../../components/Layout/Sidebar/Sidebar";
-import copyimage from '../../assets/icons/copy.svg';
-
-
+//import copyimage from '../../assets/icons/copy.svg';
+import CopyButton from "../../components/CopyButton"
 import './Welcome.css';
 
 
 function Welcome(){
+  const accountNumber='01689296';
+  const balance='4.950';
 
     return(
         
@@ -44,17 +45,23 @@ function Welcome(){
                       <div className="col-lg-3 col-md-4 col-sm-12"></div>
                       <div className="col-lg-3 col-md-4 col-sm-12">
                         <div className="jumbo">
-                          <h4 className="Saldo">Bs. 4.950</h4>
+                          <h4 className="Saldo">Bs.{balance}</h4>
                           <p className="TextJumbo">Saldo Disponible</p>
 
-                          <div className="Cuenta text-end">
-                            <div>
-                              <copyimage />
+                          <div className="Cuenta">
+                            <div className="row align-items-center">
+                              <div className="col-auto">
+                                <CopyButton className="copy-button" textToCopy={accountNumber} />
+                              </div>
+                              <div className="col">
+                                <p className="numCuenta flex-grow-1">{accountNumber}</p>
+                              </div>
+                              
                             </div>
-                            <p className="numCuenta">01689296</p>
                             <p>Nro. cuenta</p>
                           </div>
-
+                          
+                          
                           </div>
                       </div>
                       <div className="col-lg-3 col-md-4 col-sm-12"></div>
@@ -67,7 +74,7 @@ function Welcome(){
                   <div className="container">
                     <div className="row">
                       <div className="col-lg-3 col-md-4 col-sm-12">
-                        <h4>movimientos</h4>
+                        <h4>Movimientos</h4>
                         <br />
                       </div>
                       <div className="col-lg-3 col-md-4 col-sm-12"></div>
@@ -75,12 +82,11 @@ function Welcome(){
                       <table>
                           <thead>
                             <tr>
-                              <th>Nro. Referencia</th>
-                              <th>Nro. Cuenta</th>
-                              <th>Descripción</th>
-                              <th>Monto (Bs)</th>
-                              <th>Balance</th>
+                              <th>Referencia</th>
                               <th>Fecha</th>
+                              <th>Monto(Bs)</th>
+                              <th>Descripcion</th>
+                              <th>Balance</th>
                             </tr>
                           </thead>
                           <tbody>
