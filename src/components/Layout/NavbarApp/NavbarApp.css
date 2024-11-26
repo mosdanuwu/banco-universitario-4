@@ -16,8 +16,32 @@ padding: 0;
 
 }
 .logo-no-background.png{
-    width: 30px;
-   height: 65.21px;
+    width: 100px;
+    height: auto;
+
+    /*width: 30px;
+   height: 65.21px;*/
 
  
+}
+.logo-submenu{
+    justify-content: flex-end;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+.dropdown{
+    margin-left: 25px;
+    margin-top: 20px;
+
+}
+
+.btn-secondary{
+    width: 30px;
+    height: 30px;
+    left: 1321px;
+    gap: 0px;
+    opacity: 0px;
+  
+    
+
 }

@@ -12,9 +12,9 @@ function Welcome(){
         < div className="welcome">
           <div class="container">
                 <div class="row">
-                  <div class="col-9"><NavbarApp/></div><br />
-                  <div class="col-4"><Sidebar/></div><br />
-                  <div class="col-6"><h2>!Bienvenida Rhaenerys Targayen!</h2></div>
+                  <div class="columnna_navbar"><NavbarApp/></div><br />
+                  <div class="columnna_sidebar"><Sidebar/></div><br />
+                  <div class="columnna_body"><h2></h2></div>
                 </div>
           </div>
     

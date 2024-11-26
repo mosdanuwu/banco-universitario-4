@@ -13,9 +13,18 @@ const Sidebar= () =>{
         
         <div className="Sidebar">
             <br />
-            <ul> <li><Link to="#"><img className='contacApp.png' src={contac}/> Movimientos</Link></li></ul>
-            <ul><li><Link to="#"><img className='moviApp.png' src={movi}/>Transferencia</Link></li></ul>
-            <ul><li><Link to="#"><img className='transfApp.png.png' src={tranf}/>Contactos</Link></li></ul>
+            
+            <ul><li><Link to="#">
+            <img className='moviApp.png' src={movi}/>Movimientos</Link></li></ul>
+
+            <ul><li><Link to="/src/pages/Application/Transfer.jsx">
+            <img className='transfApp.png.png' src={tranf}/>Transferencias</Link></li></ul>
+
+            <ul> <li><Link to="/src/pages/Application/Contact-Mg.jsx">
+            <img className='contacApp.png' src={contac}/>Contactos</Link></li></ul>
+
+
+            
 
         </div>
 

@@ -5,26 +5,28 @@ padding: 0;
 }
 .Sidebar{
     display: flex;
-    width: 14rem;
-    height: 960px;
+    width: 250px;
+    height: 100vh;
     border-right: 1px solid;
     gap: 0px;
     opacity: 0px;
     display: block;
     background: #085F63;
-    border-right: 1px solid;
-    margin-top: 5px;
+    margin-top: 1px;
 
 }
-    ul{
-        list-style: none;
+   ul{
+       list-style: none;
+       line-height: 5;
         text-decoration: none;
-        line-height: 5;
+        color: white;
     }
         li{
             margin-bottom: 1rem;
             text-decoration: none;
+            color: white;
         }
+
 .contacApp.png{
 
     width: 35px;
@@ -57,3 +59,4 @@ padding: 0;
     opacity: 0px;
 
 }
+

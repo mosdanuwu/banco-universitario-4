@@ -4,9 +4,10 @@
     
 }
 
-h1{
+.columnna_body{
     text-align: center;
-    padding-bottom:40px;
+    margin-top: -100 px;
     font-family: 'MontserratAlternates', sans-serif;
+    color: #085F63;
     
 }
