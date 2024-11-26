@@ -8,6 +8,7 @@ import Login from '../pages/Login'
 import Registro from '../pages/Registro'
 import Welcome from '../pages/Application/Welcome'
 
+
 function Routers() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function Routers() {
         <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Registro/>} />
         <Route path="/application/welcome" element={<Welcome/>} />
+
       </Routes>
     </Router>
   )

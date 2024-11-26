@@ -11,7 +11,7 @@ function Welcome(){
   const balance='4.950';
 
     return(
-        
+
         < div className="container-text">
               <NavbarApp/>
               <div className="flex">
@@ -109,6 +109,7 @@ function Welcome(){
                  
                 </div>
           </div>
+
     
 
         </div>
