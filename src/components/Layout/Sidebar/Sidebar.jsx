@@ -23,7 +23,6 @@ const Sidebar= () =>{
             <ul>
                 <li><Link to="#"><img className='transfApp.png.png' src={tranf}/>Contactos</Link></li>
             </ul>
-        
 
         </div>
 
