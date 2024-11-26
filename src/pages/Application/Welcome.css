@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .continer-text { text-align: center; font-family: Arial, sans-serif; }
 
 .jumbo {
@@ -67,3 +68,17 @@ table > thead {
 h4 {
     font-weight: 800;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1{
+    text-align: center;
+    padding-bottom:40px;
+    font-family: 'MontserratAlternates', sans-serif;
+    
+}
+>>>>>>> 532439e85c44b6c0be0058a2aa05e92b1de6827b
