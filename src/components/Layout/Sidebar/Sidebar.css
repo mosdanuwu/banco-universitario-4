@@ -4,19 +4,56 @@ padding: 0;
 
 }
 .Sidebar{
-
     display: flex;
-    background: #085F63;
     width: 14rem;
-    height: 100vh;
+    height: 960px;
     border-right: 1px solid;
-    display: block; 
-  
+    gap: 0px;
+    opacity: 0px;
+    display: block;
+    background: #085F63;
+    border-right: 1px solid;
+    margin-top: 5px;
+
 }
     ul{
         list-style: none;
+        text-decoration: none;
+        line-height: 5;
     }
         li{
             margin-bottom: 1rem;
             text-decoration: none;
         }
+.contacApp.png{
+
+    width: 35px;
+    height: 35px;
+    top: 6px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.moviApp.png{
+
+    width: 35px;
+    height: 35px;
+    top: 6px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.transfApp.png{
+
+    width: 35px;
+    height: 35px;
+    top: 6px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+
+}
