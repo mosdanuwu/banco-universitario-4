@@ -21,7 +21,7 @@ function Welcome(){
                     <div className="row">
                       <div className="col-lg-4 col-md-4 col-sm-12"></div>
                       <div className="col-lg-4 col-md-4 col-sm-12">
-                        <h2>¡Hola. !</h2>
+                        <h2 className="welcome-hello">¡Hola. !</h2>
                         <br></br>
                         <br></br>
                       </div>
