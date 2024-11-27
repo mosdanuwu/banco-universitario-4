@@ -1,0 +1,39 @@
+.contact-contenido{
+
+    font-family: Montserrat Alternates;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    text-align: left;
+    text-underline-position: from-font;
+    /*text-decoration-skip-ink: none;*/
+    color: #085F63;
+    }
+    
+    .contact-contenido h1{
+        margin-top: 100px;
+        text-align:center;
+    
+    }
+    .table{
+        
+            width: 60%;
+            border-collapse: separate; /* Asegúrate de que las celdas no colapsen */
+            border-spacing: 12px; /* Espaciado entre celdas */
+            text-align: center;
+            margin-top: 0.50px;
+            margin-left: 350px;
+    }
+    
+    .button-agregar{
+        width: 100px;
+        height: 40px;
+        top: 257px;
+        margin-top: 20px;
+        margin-left: 1300px;
+        padding: 10px 15px 10px 15px;
+        background: linear-gradient(0deg, #085F63 12.55%, #298F8D 70.05%, #49BEB7 100%);
+    
+    
+    
+    }
