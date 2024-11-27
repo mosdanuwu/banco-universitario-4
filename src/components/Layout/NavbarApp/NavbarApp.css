@@ -15,6 +15,7 @@
   
   .navbar-logo img {
     height: 50px; /* Reducción del tamaño del logo */
+    margin-left: 15px;
   }
   
   .navbar-menu {
