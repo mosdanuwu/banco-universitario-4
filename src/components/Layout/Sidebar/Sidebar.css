@@ -13,17 +13,21 @@
   
   .sidebar.open {
     transform: translateX(0);
+    .toggle-button :hover{
+      transform: rotate(180deg);
+    }
   }
   
   .toggle-button {
     position: absolute;
     top: 20px;
     right: -50px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color:#085F63;
     color: white;
     border: none;
     cursor: pointer;
+    transform: rotate(180deg);
   }
   
   .sidebar-menu {
@@ -48,4 +52,8 @@
     background-color: #085F63;
     
   }
+
+.sidebar-menu li img {
+  margin: 10px;
+}
   
