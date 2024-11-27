@@ -28,6 +28,7 @@
     color: rgb(23, 22, 22);
     border: none;
     cursor: pointer;
+    margin-right: 90px;
   }
   
   .dropdown-menu {
@@ -61,7 +62,7 @@
   }
   
   .icono-adicional{
-    margin-right: 10px;
+    margin-right: 45px;
   }
 
 
