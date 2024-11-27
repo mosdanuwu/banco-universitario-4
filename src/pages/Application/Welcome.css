@@ -31,6 +31,12 @@
     text-decoration-skip-ink: none;
 }
 
+.columnna_body{
+    text-align: center;
+    margin-top: -100 px;
+    font-family: 'MontserratAlternates', sans-serif;
+    color: #085F63;
+}
 .TextJumbo{
     width: 177px;
     height: 24px;
@@ -59,6 +65,7 @@
     line-height: 29.26px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+
     
 }
 
@@ -80,3 +87,11 @@ h4 {
     }
 }
 
+.welcome-hello{
+    font-family: Montserrat Alternates;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    color: #085F63;
+    margin-top: 30px;
+}

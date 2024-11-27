@@ -1,22 +1,69 @@
-*{
-margin: 0;
-padding: 0;
-
-}
-.NavbarApp{
+/* src/Navbar.css */
+.navbar {
     display: flex;
-    width: 1377px;
-    height: 101px;
-    top: 2px;
-    left: 68px;
-    gap: 0px;
-    opacity: 0px;
-    background: #FBFBFB;
-    margin-right: 20px
+    justify-content: space-between;
+    align-items: center;
+    background-color:#FBFBFB;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-logo img {
+    height: 50px; /* Reducción del tamaño del logo */
+    margin-left: 15px;
+  }
+  
+  .navbar-menu {
+    position: relative;
 
-}
-.logo-no-background.png{
-    width: 30px;
-   height: 65.21px;
 
-}
+  }
+  
+  .dropdown-toggle {
+    background-color:#FBFBFB;
+    color: rgb(23, 22, 22);
+    border: none;
+    cursor: pointer;
+    margin-right: 90px;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color:#FBFBFB;
+    box-shadow: 0 8px 16px #FBFBFB(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+  }
+  
+  .dropdown-menu li a {
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+   
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #575757;
+  }
+  
+  .navbar-menu .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+    display: block;
+  }
+  
+  .icono-adicional{
+    margin-right: 45px;
+  }
+
+
