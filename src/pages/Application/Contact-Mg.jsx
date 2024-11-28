@@ -47,8 +47,8 @@ import './Contact-Mg.css';
                     <input type="text" className="form-control" id="buscar" placeholder="Buscar contacto" />
                  </div>
 
-                 <button type="volver" className="regresar btn btn-primary btn-custom-primary fw-bold">
-                  Volver</button>
+                 <button type="volver" className="regresar btn btn-primary btn-custom-primary fw-bold ">
+                  <a href="/Application/Welcome/#mov" className='text-white text-decoration-none'>Volver</a></button>
                 
               
 

@@ -1,0 +1,17 @@
+.transfer-title{
+    font-family: Montserrat Alternates;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 39.01px;
+    color: #085F63;
+    margin-top: 30px;
+}
+
+.formTransf{
+    background: linear-gradient(0deg, #BDEFE8 0%, #49BEB7 75.58%);
+    /*width: 661px;
+    height: 645px;*/
+    padding: 30px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+}

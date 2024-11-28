@@ -5,12 +5,12 @@ import './PaginatedTable.css';
 function PaginatedTable({ data, itemsPerPage }) {
   const [currentPage, setCurrentPage] = useState(1); // Página actual
 
-  // Índices para dividir los datos en páginas
+  // Índices para datos en páginas
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentData = data.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Cambiar de página
+  // Cambio de página
   const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
 
@@ -33,7 +33,7 @@ function PaginatedTable({ data, itemsPerPage }) {
                     <tr key={index}>
                     <td>{item.referencia}</td>
                     <td>{item.fecha}</td>
-                    <td>{item.monto}</td>
+                    <td className={item.monto > 0 ? "monto-positivo" : "monto-negativo"}>{item.monto}</td>
                     <td>{item.descripcion}</td>
                     <td>{item.balance}</td>
                 </tr>

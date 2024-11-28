@@ -1,9 +1,7 @@
 import React from "react";
 import NavbarApp from '../../components/Layout/NavbarApp/NavbarApp';
 import Sidebar from "../../components/Layout/Sidebar/Sidebar";
-//import copyimage from '../../assets/icons/copy.svg';
 import CopyButton from "../../components/CopyButton"
-//import Pagin from '../../components/Pagination/Pagination';
 import Pagination from 'react-bootstrap/Pagination';
 import PaginatedTable from "../../components/Pagination/PaginatedTable";
 import './Welcome.css';
@@ -14,14 +12,28 @@ function Welcome(){
   const balance='4.950';
   
   const transactions = [
-    { referencia: "001", fecha: "2024-11-01", monto: "500", descripcion: "Pago 1", balance: "4500" },
-    { referencia: "002", fecha: "2024-11-02", monto: "1000", descripcion: "Pago 2", balance: "5500" },
-    { referencia: "003", fecha: "2024-11-03", monto: "1500", descripcion: "Pago 3", balance: "6000" },
-    { referencia: "004", fecha: "2024-11-04", monto: "2000", descripcion: "Pago 4", balance: "8000" },
-    { referencia: "005", fecha: "2024-11-05", monto: "3000", descripcion: "Pago 5", balance: "11000" },
-    { referencia: "006", fecha: "2024-11-06", monto: "4000", descripcion: "Pago 6", balance: "15000" },
-    { referencia: "006", fecha: "2024-11-06", monto: "4000", descripcion: "Pago 6", balance: "15000" },
-    // Más datos...
+      { referencia: "001", fecha: "2024-11-01", monto: 500, descripcion: "Pago recibido", balance: "4500" },
+      { referencia: "002", fecha: "2024-11-02", monto: -300, descripcion: "Pago realizado", balance: "4200" },
+      { referencia: "003", fecha: "2024-11-03", monto: 1500, descripcion: "Depósito", balance: "5700" },
+      { referencia: "004", fecha: "2024-11-04", monto: -200, descripcion: "Pago tarjeta", balance: "5500" },
+      { referencia: "005", fecha: "2024-11-05", monto: 800, descripcion: "Transferencia recibida", balance: "6300" },
+      { referencia: "006", fecha: "2024-11-06", monto: -150, descripcion: "Compra supermercado", balance: "6150" },
+      { referencia: "007", fecha: "2024-11-07", monto: 1200, descripcion: "Ingreso adicional", balance: "7350" },
+      { referencia: "008", fecha: "2024-11-08", monto: -50, descripcion: "Pago servicio", balance: "7300" },
+      { referencia: "009", fecha: "2024-11-09", monto: 2000, descripcion: "Pago bono", balance: "9300" },
+      { referencia: "010", fecha: "2024-11-10", monto: -400, descripcion: "Pago préstamo", balance: "8900" },
+      { referencia: "011", fecha: "2024-11-11", monto: 300, descripcion: "Pago recibido", balance: "9200" },
+      { referencia: "012", fecha: "2024-11-12", monto: -100, descripcion: "Compra en línea", balance: "9100" },
+      { referencia: "013", fecha: "2024-11-13", monto: 200, descripcion: "Transferencia recibida", balance: "9300" },
+      { referencia: "014", fecha: "2024-11-14", monto: -500, descripcion: "Pago tarjeta crédito", balance: "8800" },
+      { referencia: "015", fecha: "2024-11-15", monto: 1800, descripcion: "Depósito en cuenta", balance: "10600" },
+      { referencia: "016", fecha: "2024-11-16", monto: -250, descripcion: "Pago de renta", balance: "10350" },
+      { referencia: "017", fecha: "2024-11-17", monto: 1200, descripcion: "Bono recibido", balance: "11550" },
+      { referencia: "018", fecha: "2024-11-18", monto: -650, descripcion: "Pago en efectivo", balance: "10900" },
+      { referencia: "019", fecha: "2024-11-19", monto: 1000, descripcion: "Ingreso extra", balance: "11900" },
+      { referencia: "020", fecha: "2024-11-20", monto: -900, descripcion: "Pago préstamo personal", balance: "11000" },
+    
+    // API...
   ];
 
     return(
@@ -88,14 +100,14 @@ function Welcome(){
                   <div className="container">
                     <div className="row">
                       <div className="col-lg-3 col-md-4 col-sm-12">
-                        <h4>Movimientos</h4>
+                        <h4 id="mov">Movimientos</h4>
                         <br />
                       </div>
                       <div className="col-lg-3 col-md-4 col-sm-12"></div>
                       <div className="col-lg-3 col-md-4 col-sm-12"></div>
                         <br />
                         <br />
-                      <PaginatedTable data={transactions} itemsPerPage={3} />
+                      <PaginatedTable data={transactions} itemsPerPage={10} />
 
                     </div>
                   </div>
