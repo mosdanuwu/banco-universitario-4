@@ -6,34 +6,66 @@
     line-height: 39.01px;
     text-align: left;
     text-underline-position: from-font;
-    /*text-decoration-skip-ink: none;*/
+   
     color: #085F63;
     }
     
     .contact-contenido h1{
-        margin-top: 100px;
-        text-align:center;
+    
+
+    font-family: Montserrat Alternates;
+    font-size: 28px;
+    font-weight: 700;
+    color: #085F63;
+    margin-top: 80px;
+    margin-left: 300px;
     
     }
     .table{
         
-            width: 60%;
+            width: 55%;
             border-collapse: separate; /* Asegúrate de que las celdas no colapsen */
-            border-spacing: 12px; /* Espaciado entre celdas */
+            border-spacing: 10px; /* Espaciado entre celdas */
             text-align: center;
-            margin-top: 0.50px;
-            margin-left: 350px;
+            margin-top: 80px;
+            margin-left: 250px;
     }
     
     .button-agregar{
-        width: 100px;
-        height: 40px;
-        top: 257px;
-        margin-top: 20px;
-        margin-left: 1300px;
-        padding: 10px 15px 10px 15px;
-        background: linear-gradient(0deg, #085F63 12.55%, #298F8D 70.05%, #49BEB7 100%);
-    
-    
+        
+        margin-left: 1090px;
+        margin-top: 80px;
     
     }
+.label{
+
+    text-align: center;
+            margin-top: -268px;
+            margin-left: 390px;
+            width: 40%;
+    }
+.table tr th{
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration-skip-ink: none;
+   
+
+}
+
+.col-item tr{
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-decoration-skip-ink: none;
+}
+
+.regresar{
+ 
+    margin-left: 1450px;
+    margin-top: -400px;
+
+}
