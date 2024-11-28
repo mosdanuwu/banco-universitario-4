@@ -3,12 +3,26 @@ import NavbarApp from '../../components/Layout/NavbarApp/NavbarApp';
 import Sidebar from "../../components/Layout/Sidebar/Sidebar";
 //import copyimage from '../../assets/icons/copy.svg';
 import CopyButton from "../../components/CopyButton"
+//import Pagin from '../../components/Pagination/Pagination';
+import Pagination from 'react-bootstrap/Pagination';
+import PaginatedTable from "../../components/Pagination/PaginatedTable";
 import './Welcome.css';
 
 
 function Welcome(){
   const accountNumber='01689296';
   const balance='4.950';
+  
+  const transactions = [
+    { referencia: "001", fecha: "2024-11-01", monto: "500", descripcion: "Pago 1", balance: "4500" },
+    { referencia: "002", fecha: "2024-11-02", monto: "1000", descripcion: "Pago 2", balance: "5500" },
+    { referencia: "003", fecha: "2024-11-03", monto: "1500", descripcion: "Pago 3", balance: "6000" },
+    { referencia: "004", fecha: "2024-11-04", monto: "2000", descripcion: "Pago 4", balance: "8000" },
+    { referencia: "005", fecha: "2024-11-05", monto: "3000", descripcion: "Pago 5", balance: "11000" },
+    { referencia: "006", fecha: "2024-11-06", monto: "4000", descripcion: "Pago 6", balance: "15000" },
+    { referencia: "006", fecha: "2024-11-06", monto: "4000", descripcion: "Pago 6", balance: "15000" },
+    // Más datos...
+  ];
 
     return(
 
@@ -79,29 +93,9 @@ function Welcome(){
                       </div>
                       <div className="col-lg-3 col-md-4 col-sm-12"></div>
                       <div className="col-lg-3 col-md-4 col-sm-12"></div>
-                      <table>
-                          <thead>
-                            <tr>
-                              <th>Referencia</th>
-                              <th>Fecha</th>
-                              <th>Monto(Bs)</th>
-                              <th>Descripcion</th>
-                              <th>Balance</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
                         <br />
                         <br />
+                      <PaginatedTable data={transactions} itemsPerPage={3} />
 
                     </div>
                   </div>

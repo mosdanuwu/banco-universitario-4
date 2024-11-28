@@ -15,6 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src={logo} alt="Logo" />
+        
       </div>
       <div className="navbar-menu">
         <button className="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
