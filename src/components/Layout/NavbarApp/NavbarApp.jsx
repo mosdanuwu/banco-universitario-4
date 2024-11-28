@@ -15,15 +15,16 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src={logo} alt="Logo" />
+        
       </div>
       <div className="navbar-menu">
         <button className="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
         <img src={icono} alt="Icono adicional" className="icono-adicional" />
         </button>
         <ul className="dropdown-menu">
-          <li><a className="dropdown-p" href="/src/pages/Application/Profile.jsx">
+          <li><a className="dropdown-p" href="/Application/Profile">
           <img src={perfil} className="icono-adicional" />Perfil</a></li>
-          <li><a className="dropdown-a" href="/src/pages/Application/Adjustment.jsx">
+          <li><a className="dropdown-a" href="/Application/Adjustment">
           <img src={clave} className="icono-adicional" />Ajustes</a></li>
           <li><a className="dropdown-c" href="#logout">
           <img src={cerrar} className="icono-adicional"/>Cerrar sesión</a></li>

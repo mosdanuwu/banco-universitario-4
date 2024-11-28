@@ -1,0 +1,71 @@
+.contact-contenido{
+
+    font-family: Montserrat Alternates;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    text-align: left;
+    text-underline-position: from-font;
+   
+    color: #085F63;
+    }
+    
+    .contact-contenido h1{
+    
+
+    font-family: Montserrat Alternates;
+    font-size: 28px;
+    font-weight: 700;
+    color: #085F63;
+    margin-top: 80px;
+    margin-left: 300px;
+    
+    }
+    .table{
+        
+            width: 55%;
+            border-collapse: separate; /* Asegúrate de que las celdas no colapsen */
+            border-spacing: 10px; /* Espaciado entre celdas */
+            text-align: center;
+            margin-top: 80px;
+            margin-left: 250px;
+    }
+    
+    .button-agregar{
+        
+        margin-left: 1090px;
+        margin-top: 80px;
+    
+    }
+.label{
+
+    text-align: center;
+            margin-top: -268px;
+            margin-left: 390px;
+            width: 40%;
+    }
+.table tr th{
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration-skip-ink: none;
+   
+
+}
+
+.col-item tr{
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-decoration-skip-ink: none;
+}
+
+.regresar{
+ 
+    margin-left: 1450px;
+    margin-top: -400px;
+
+}
