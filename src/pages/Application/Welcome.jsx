@@ -20,6 +20,7 @@ function Welcome(){
     { referencia: "004", fecha: "2024-11-04", monto: "2000", descripcion: "Pago 4", balance: "8000" },
     { referencia: "005", fecha: "2024-11-05", monto: "3000", descripcion: "Pago 5", balance: "11000" },
     { referencia: "006", fecha: "2024-11-06", monto: "4000", descripcion: "Pago 6", balance: "15000" },
+    { referencia: "006", fecha: "2024-11-06", monto: "4000", descripcion: "Pago 6", balance: "15000" },
     // Más datos...
   ];
 
