@@ -9,23 +9,23 @@ import { faEye, faEyeSlash} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const INITIAL_FORM = {
-  firstName: "",
-  lastName: "",
-  idNumber: "",
+  first_name: "",
+  last_name: "",
+  document_number: "",
   email: "",
-  birthDate: "",
-  phone: "",
+  birth_date: "",
+  phone_number: "",
   password: "",
   confirmPassword: ""
 };
 
 const FORM_VALIDATORS = {
-  firstName: ["required"],
-  lastName: ["required"],
-  idNumber: ["required"],
+  first_name: ["required"],
+  last_name: ["required"],
+  document_number: ["required"],
   email: ["required", "email"],
-  birthDate: ["required"],
-  phone: ["required"],
+  birth_date: ["required"],
+  phone_number: ["required"],
   password: ["required", { minLength: 8 }],
   confirmPassword: ["required", { minLength: 8 }, { sameAs: "password" }]
 };
@@ -57,10 +57,8 @@ const Register = () => {
     });
   };
 
-  /*
-  const formattedForm = { ...form,
-    
-    , birthDate: new Date(form.birthDate).toISOString() };*/
+  
+ 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -69,22 +67,35 @@ const Register = () => {
       setFormErrors(errors);
       return;
     }
-    if (form.password !== form.confirmPassword) { 
+
+    const formattedForm = { 
+      ...form,
+      
+      birth_date: new Date(form.birth_date).toISOString() 
+    };
+    /*if (form.password !== form.confirmPassword) { 
       setFormErrors((prevErrors) => ({ 
         ...prevErrors, confirmPassword: "Las contraseñas no coinciden" })); 
         return; } 
         const formData = {
-           firstName:form.firstName, lastName: form.lastName, idNumber: form.idNumber, email: form.email, birthDate: form.birthDate, phone: form.phone, password: form.password };
+           first_name:form.first_name, 
+           last_name: form.last_name, 
+           document_number: form.document_number, 
+           email: form.email, 
+           birth_date: form.birth_date, 
+           phone_number: form.phone_number, 
+           password: form.password };*/
     try { 
-      const data = await registerUser(formData); 
-      console.log('Registro exitoso', data); 
+      const response = await registerUser(formattedForm); 
+      console.log('Registro exitoso', response.data.jwt); 
+      localStorage.setItem('bank_jwt', response.data.jwt);
 
-      if (data.token) { 
-        localStorage.setItem('bank_jwt', data.token); 
+      /*if (response.data.jwt) { 
+        localStorage.setItem('bank_jwt', response.data.jwt); 
         console.log('Token guardado:', localStorage.getItem('bank_jwt'));
       } 
         else { 
-          throw new Error('Token no encontrado en la respuesta de la API'); }
+          throw new Error('Token no encontrado en la respuesta de la API'); }*/
 
       setSuccess(true); 
       setTimeout(() => navigate('/application/welcome'), 3000); 
@@ -123,31 +134,31 @@ const Register = () => {
       <Form noValidate className="p-4 rounded shadow-sm" onSubmit={handleSubmit}>
         <Row>
           <Col md={6} className="mb-3">
-            <Form.Group controlId="firstName">
+            <Form.Group controlId="first_name">
               <Form.Label>Nombres</Form.Label>
               <Form.Control 
                 type="text" 
-                name="firstName"
+                name="first_name"
                 placeholder="Ingresa tus nombres" 
-                value={form.firstName}
+                value={form.first_name}
                 onChange={handleChangeForm}
-                isInvalid={!!formErrors.firstName}
+                isInvalid={!!formErrors.first_name}
               />
               <Form.Control.Feedback type="invalid">
-                {formErrors.firstName}
+                {formErrors.first_name}
               </Form.Control.Feedback>
             </Form.Group>
           </Col>
           <Col md={6} className="mb-3">
-            <Form.Group controlId="lastName">
+            <Form.Group controlId="last_name">
               <Form.Label>Apellidos</Form.Label>
               <Form.Control 
                 type="text" 
-                name="lastName"
+                name="last_name"
                 placeholder="Ingresa tus apellidos" 
-                value={form.lastName}
+                value={form.last_name}
                 onChange={handleChangeForm}
-                isInvalid={!!formErrors.lastName}
+                isInvalid={!!formErrors.last_name}
               />
               <Form.Control.Feedback type="invalid">
                 {formErrors.lastName}
@@ -155,18 +166,18 @@ const Register = () => {
             </Form.Group>
           </Col>
           <Col md={6} className="mb-3">
-            <Form.Group controlId="idNumber">
+            <Form.Group controlId="document_number">
               <Form.Label>Cedula</Form.Label>
               <Form.Control 
                 type="text" 
-                name="idNumber"
+                name="document_number"
                 placeholder="Ingresa tu cedula" 
-                value={form.idNumber}
+                value={form.document_number}
                 onChange={handleChangeForm}
-                isInvalid={!!formErrors.idNumber}
+                isInvalid={!!formErrors.document_number}
               />
               <Form.Control.Feedback type="invalid">
-                {formErrors.idNumber}
+                {formErrors.document_number}
               </Form.Control.Feedback>
             </Form.Group>
           </Col>
@@ -187,33 +198,33 @@ const Register = () => {
             </Form.Group>
           </Col>
           <Col md={6} className="mb-3">
-            <Form.Group controlId="birthDate">
+            <Form.Group controlId="birth_date">
               <Form.Label>Fecha de Nacimiento</Form.Label>
               <Form.Control 
                 type="date"
-                name="birthDate" 
-                value={form.birthDate}
+                name="birth_date" 
+                value={form.birth_date}
                 onChange={handleChangeForm}
-                isInvalid={!!formErrors.birthDate}
+                isInvalid={!!formErrors.birth_date}
               />
               <Form.Control.Feedback type="invalid">
-                {formErrors.birthDate}
+                {formErrors.birth_date}
               </Form.Control.Feedback>
             </Form.Group>
           </Col>
           <Col md={6} className="mb-3">
-            <Form.Group controlId="phone">
+            <Form.Group controlId="phone_number">
               <Form.Label>Telefono</Form.Label>
               <Form.Control 
                 type="tel" 
-                name="phone"
-                placeholder="Enter your phone number" 
-                value={form.phone}
+                name="phone_number"
+                placeholder="Ingresa tu numero de telefono" 
+                value={form.phone_number}
                 onChange={handleChangeForm}
-                isInvalid={!!formErrors.phone}
+                isInvalid={!!formErrors.phone_number}
               />
               <Form.Control.Feedback type="invalid">
-                {formErrors.phone}
+                {formErrors.phone_number}
               </Form.Control.Feedback>
             </Form.Group>
           </Col>

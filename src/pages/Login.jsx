@@ -66,9 +66,9 @@ export default function Login() {
       return; 
     } 
     try { 
-      const data = await loginUser(form); 
-      console.log('Login successful', data); 
-      localStorage.setItem('bank_jwt', data.token); 
+      const response = await loginUser(form); 
+      console.log('Login successful',response); 
+      localStorage.setItem('bank_jwt', response.data.jwt); 
       // Guarda el token en el almacenamiento local o en el contexto global 
       //setJWT(data.token); 
       // Verificar si el token existe y almacenarlo 

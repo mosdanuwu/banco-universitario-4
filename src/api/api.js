@@ -33,7 +33,7 @@ export const loginUser = async (credentials) => {
 
 export const registerUser = async (userData) => { 
   const myHeaders = new Headers(); 
-  myHeaders.append("Content-Type", "application/json"); 
+  myHeaders.append("Accept-Language", "es"); 
   const requestOptions = { 
     method: "POST", 
     headers: myHeaders, 
