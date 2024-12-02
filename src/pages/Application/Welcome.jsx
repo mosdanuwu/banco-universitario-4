@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import NavbarApp from '../../components/Layout/NavbarApp/NavbarApp';
 import Sidebar from "../../components/Layout/Sidebar/Sidebar";
 import CopyButton from "../../components/CopyButton"
-import Pagination from 'react-bootstrap/Pagination';
 import PaginatedTable from "../../components/Pagination/PaginatedTable";
 import './Welcome.css';
 import { getBalance } from "../../api/api";
