@@ -21,9 +21,9 @@ const Sidebar = () => {
             <img src={isOpen ? cerrarIcon : abrirIcon} alt={isOpen ? 'Cerrar' : 'Abrir'} />
             </button>
             <ul className="sidebar-menu">
-                <li><a href="#home"><img className='moviApp.png' src={movi}/>Movimientos</a></li>
-                <li><a href="/src/pages/Application/Transfer.jsx"><img className='transfApp.png.png' src={tranf}/>Transferencias</a></li>
-                <li><a href="/src/pages/Application/Contact-Mg.jsx"><img className='contacApp.png' src={contac}/>Contactos</a></li>
+                <li><a href="/Application/Welcome/#mov"><img className='moviApp.png' src={movi}/>Movimientos</a></li>
+                <li><a href="/Application/Transfer"><img className='transfApp.png.png' src={tranf}/>Transferencias</a></li>
+                <li><a href="/Application/Contact-Mg"><img className='contacApp.png' src={contac}/>Contactos</a></li>
             </ul>
         </div>
     );

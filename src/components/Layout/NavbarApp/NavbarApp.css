@@ -29,7 +29,7 @@
     color: rgb(23, 22, 22);
     border: none;
     cursor: pointer;
-    margin-right: 90px;
+    margin-right: 200px;
   }
   
   .dropdown-menu {
@@ -38,7 +38,7 @@
     top: 100%;
     right: 0;
     background-color:#FBFBFB;
-    box-shadow: 0 8px 16px #FBFBFB(0, 0, 0, 0.2);
+    box-shadow:0 8px 16px #FBFBFB(0, 0, 0, 0.2);
     z-index: 1;
   }
   
