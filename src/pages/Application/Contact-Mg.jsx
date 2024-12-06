@@ -19,9 +19,7 @@ import './Contact-Mg.css';
             
             <div className= " contact-contenido ">
               <h1>Administrar contactos frecuentes</h1></div>
-              <div className='button-agregar'>
-              <button type="agregar" className="btn btn-primary btn-custom-primary fw-bold">Agregar</button> 
-              </div>
+              
               
               <div className='table-contactos'>
 
@@ -42,17 +40,17 @@ import './Contact-Mg.css';
                     </table>
                                 
               </div>
-                 <div className="label col-md-6 mb-3">
-                    <label htmlFor="nombres" className="form-label"></label>
-                    <input type="text" className="form-control" id="buscar" placeholder="Buscar contacto" />
-                 </div>
+                  <div class=" barra input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Buscar</button>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"/>
+                  </div>
+                  <div class="button input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Agregar</button>
 
-                 <button type="volver" className="regresar btn btn-primary btn-custom-primary fw-bold ">
-                  <a href="/Application/Welcome/#mov" className='text-white text-decoration-none'>Volver</a></button>
-                
+                  </div>
+
               
-
-
+                
 
             </div>
 
