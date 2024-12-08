@@ -24,8 +24,8 @@ const Navbar = () => {
         <ul className="dropdown-menu">
           <li><a className="dropdown-p" href="/Application/Profile">
           <img src={perfil} className="icono-adicional" />Perfil</a></li>
-          <li><a className="dropdown-a" href="/Application/Adjustment">
-          <img src={clave} className="icono-adicional" />Ajustes</a></li>
+          <li><a className="dropdown-a" href="/Application/Password-change">
+          <img src={clave} className="icono-adicional" />Contraseña</a></li>
           <li><a className="dropdown-c" href="#logout">
           <img src={cerrar} className="icono-adicional"/>Cerrar sesión</a></li>
         </ul>

@@ -27,29 +27,19 @@
             border-collapse: separate; /* Asegúrate de que las celdas no colapsen */
             border-spacing: 10px; /* Espaciado entre celdas */
             text-align: center;
-            margin-top: 80px;
-            margin-left: 250px;
+            margin-top: 90px;
+            margin-left: 380px;
+            
     }
     
-    .button-agregar{
-        
-        margin-left: 1090px;
-        margin-top: 80px;
-    
-    }
-.label{
 
+
+.table thead th{
     text-align: center;
-            margin-top: -268px;
-            margin-left: 390px;
-            width: 40%;
-    }
-.table tr th{
-    text-align: center;
-    font-family: Montserrat Alternates;
+    font-family: 'Montserrat Alternates', Arial, sans-serif !important;
     font-size: 18px;
     font-weight: 700;
-    text-decoration-skip-ink: none;
+ 
    
 
 }
@@ -63,9 +53,17 @@
     text-decoration-skip-ink: none;
 }
 
-.regresar{
+.barra{
  
-    margin-left: 1450px;
-    margin-top: -400px;
+    margin-left: 305px;
+    margin-top: -160px;
+    width: 50%;
 
+}
+
+.button{
+
+    margin-left: 1050px;
+    margin-top: -52px;
+    
 }

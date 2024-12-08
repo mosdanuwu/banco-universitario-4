@@ -19,13 +19,11 @@ import './Contact-Mg.css';
             
             <div className= " contact-contenido ">
               <h1>Administrar contactos frecuentes</h1></div>
-              <div className='button-agregar'>
-              <button type="agregar" className="btn btn-primary btn-custom-primary fw-bold">Agregar</button> 
-              </div>
+              
               
               <div className='table-contactos'>
 
-                  <table class="table">
+                  <table className="table">
                       <thead>
                         <tr>
                           <th scope="col">Numero de cuenta</th>
@@ -34,32 +32,34 @@ import './Contact-Mg.css';
                         </tr>
                       </thead>
                       <tbody>
-                      <th scope="col-item">---</th>
-                          <th scope="col">--</th>
-                          <th scope="col">--</th>
-                       
+                      <tr>
+                        <td>---</td>
+                        <td>--</td>
+                        <td>--</td>
+                      </tr>
+              
                       </tbody>
                     </table>
                                 
               </div>
-                 <div className="label col-md-6 mb-3">
-                    <label htmlFor="nombres" className="form-label"></label>
-                    <input type="text" className="form-control" id="buscar" placeholder="Buscar contacto" />
-                 </div>
-
-                 <button type="volver" className="regresar btn btn-primary btn-custom-primary fw-bold ">
-                  <a href="/Application/Welcome/#mov" className='text-white text-decoration-none'>Volver</a></button>
-                
-              
-
-
-
-            </div>
-
-          </div>
-              
-
-  
-  )
+              <div className="barra input-group mb-3">
+          <button className="btn btn-outline-secondary" type="button" id="button-addon1">
+            Buscar
+          </button>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Ingrese el alias del contacto"
+            aria-label="Ingrese el alias del contacto"
+            aria-describedby="button-addon1"
+          />
+          <button className="btn btn-secondary ms-4" type="button" id="button-addon2">
+            Agregar
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }
+
 export default Contact;
