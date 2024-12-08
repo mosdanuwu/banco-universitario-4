@@ -29,16 +29,17 @@
             text-align: center;
             margin-top: 90px;
             margin-left: 380px;
+            
     }
     
 
 
-.table tr th{
+.table thead th{
     text-align: center;
-    font-family: Montserrat Alternates;
+    font-family: 'Montserrat Alternates', Arial, sans-serif !important;
     font-size: 18px;
     font-weight: 700;
-    text-decoration-skip-ink: none;
+ 
    
 
 }
