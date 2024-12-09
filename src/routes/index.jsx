@@ -11,6 +11,7 @@ import Profile from '../pages/Application/Profile'
 import Transfer from '../pages/Application/Transfer'
 import Contact from '../pages/Application/Contact-Mg'
 import Password from '../pages/Application/Password-change'
+import Modal from '../components/Modal/Modal'
 
 
 
@@ -29,6 +30,7 @@ function Routers() {
         <Route path="/application/transfer" element={<Transfer/>} />
         <Route path="/application/contact-Mg" element={<Contact/>} />
         <Route path="/application/password-change" element={<Password/>} />
+        <Route path="/components/modal" element={<Modal/>} />
         
 
       </Routes>
