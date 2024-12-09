@@ -1,4 +1,4 @@
-const API_URL = '/api'
+const API_URL = 'http://localhost:3000';
 
 
 export const fetchWithErrorHandling = async (url, options = {}) => {
@@ -11,7 +11,7 @@ export const fetchWithErrorHandling = async (url, options = {}) => {
     return response.json();
   } catch (error) {
     console.error('Error en la solicitud:', error);
-    throw error; // Vuelve a lanzar el error para manejarlo en el componente
+    throw error; 
   }
 };
 
@@ -50,3 +50,41 @@ export const getBalance = async (token) => {
   const requestOptions = { method: "GET", headers: myHeaders, redirect: "follow" }; 
   return fetchWithErrorHandling(`${API_URL}/v1/client/user/balance`, requestOptions); 
 }; 
+
+export const getWhoAmI = async (token) =>{
+
+  const myHeaders = new Headers();
+  myHeaders.append("Accept-Language", "es");
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  return fetchWithErrorHandling(`${API_URL}/v1/client/user/whoami`, requestOptions); 
+};
+
+export const getMovements = async (token, currentPage, itemsPerPage, multiplier) =>{
+
+  const myHeaders = new Headers();
+  myHeaders.append("Accept-Language", "es");
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const params = new URLSearchParams();
+  params.append("page", currentPage);
+  params.append("page_size", itemsPerPage);
+
+  // Solo agregar el parámetro multiplier si su valor es distinto a 0
+  if (multiplier !== 0) {
+    params.append("multiplier", multiplier);
+  }
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  const url = `${API_URL}/v1/client/movement?${params.toString()}`;
+  return fetchWithErrorHandling(url, requestOptions); 
+
+ 
+};
+
