@@ -4,7 +4,6 @@ import Sidebar from "../../components/Layout/Sidebar/Sidebar";
 import buscar from "../../assets/images/Buscar.png";
 import Modal from "../../components/Modal/Modal";
 
-
 import './Contact-Mg.css';
 
 

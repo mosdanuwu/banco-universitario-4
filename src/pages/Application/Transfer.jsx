@@ -33,6 +33,13 @@ import './Transfer.css';
           });
           alert("Datos enviados con éxito.");
         };
+
+        // Estados para manejar el modal
+        const [show, setShow] = useState(false);
+
+        const handleShow = () => setShow(true);
+        const handleClose = () => setShow(false);
+
   
         return (
     
@@ -61,7 +68,7 @@ import './Transfer.css';
                             <div className="col-lg-3 col-md-3 col-sm-1"></div>
                             <div className="col-lg-6 col-md-6 col-sm-10">
                                 <div className="formTransf">
-                                        <h3>Dato de la operación</h3>
+                                        <h3>Datos de la operación</h3>
                                         <div className="row">
                                                 <div className="col-lg-1"></div>
                                                 <div className="col-lg-6">
@@ -152,6 +159,8 @@ import './Transfer.css';
                                                                 </button> 
                                                                 </div>  
                                                         </form>
+
+                                                        
                                                 </div>
                                         </div>
                                         </div>
@@ -161,6 +170,8 @@ import './Transfer.css';
                         </div>
                     </div>
                 </div>
+
+        
      
 
       
