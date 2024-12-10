@@ -15,9 +15,6 @@ export const fetchWithErrorHandling = async (url, options = {}) => {
   }
 };
 
-export const getUsers = async () => {
-  return fetchWithErrorHandling(`${API_URL}/users`);
-};
 
 export const loginUser = async (credentials) => { 
     const myHeaders = new Headers(); 
@@ -43,6 +40,24 @@ export const registerUser = async (userData) => {
 return fetchWithErrorHandling(`${API_URL}/v1/public/client/user/register`, requestOptions); 
 };
 
+
+  export const updatePassword = async (token, passwords) => { 
+    const myHeaders = new Headers();
+    myHeaders.append("Accept-Language", "es");
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Authorization", `Bearer ${token}`);
+    const requestOptions = {
+      method: "PATCH",
+      headers: myHeaders,
+      body: JSON.stringify(passwords),
+      redirect: "follow"
+    };
+    
+    return fetchWithErrorHandling(`${API_URL}/v1/client/user/password`, requestOptions);
+  
+  }
+  
+  
 export const getBalance = async (token) => { 
   const myHeaders = new Headers(); 
   myHeaders.append("Accept-Language", "es"); 
