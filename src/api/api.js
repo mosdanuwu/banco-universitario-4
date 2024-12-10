@@ -189,7 +189,7 @@ export const getPaginatedContacts = async (token, page, pageSize) => {
     headers: myHeaders, 
     redirect: "follow" 
   }; 
-  // Construcción de la URL con parámetros de paginación 
+
   const url = new URL(`${API_URL}/v1/client/contact`); 
   url.searchParams.append('page', page); 
   url.searchParams.append('page_size', pageSize); 
