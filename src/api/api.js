@@ -64,6 +64,8 @@ export const getWhoAmI = async (token) =>{
   return fetchWithErrorHandling(`${API_URL}/v1/client/user/whoami`, requestOptions); 
 };
 
+
+
 export const getMovements = async (token, currentPage, itemsPerPage, multiplier) =>{
 
   const myHeaders = new Headers();
@@ -88,3 +90,128 @@ export const getMovements = async (token, currentPage, itemsPerPage, multiplier)
  
 };
 
+export const getNumberAccount = async(token, numberAccount)=>{
+  const myHeaders = new Headers();
+  myHeaders.append("Accept-Language", "es");
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  return fetchWithErrorHandling(`${API_URL}/v1/client/user/account/${numberAccount}`, requestOptions); 
+}
+
+export const createTransfer = async (transferData) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: JSON.stringify({transferData}),
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/movement`, requestOptions);
+
+}
+
+
+export const createContact = async (token, dataContact) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: JSON.stringify({dataContact}),
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact`, requestOptions);
+
+}
+
+export const updateContact = async (token, id, newData) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "PATCH",
+    headers: myHeaders,
+    body: JSON.stringify({newData}),
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact/${id}`, requestOptions);
+
+}
+
+
+export const deleteContact = async (token, id) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "DELETE",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact/${id}`, requestOptions);
+
+}
+
+export const getContact = async (token, id) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact/${id}`, requestOptions);
+
+}
+
+
+
+export const getPaginatedContacts = async (token, page, pageSize) => { 
+  const myHeaders = new Headers(); 
+  myHeaders.append("Content-Type", "application/json"); 
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const requestOptions = { 
+    method: "GET", 
+    headers: myHeaders, 
+    redirect: "follow" 
+  }; 
+  // Construcción de la URL con parámetros de paginación 
+  const url = new URL(`${API_URL}/v1/client/contact`); 
+  url.searchParams.append('page', page); 
+  url.searchParams.append('page_size', pageSize); 
+  
+  return fetchWithErrorHandling(url.toString(), requestOptions); 
+};
+
+export const searchContactsByAlias = async (token, alias ) => { 
+  const myHeaders = new Headers(); 
+  myHeaders.append("Content-Type", "application/json"); 
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+
+  const requestOptions = { 
+    method: "GET", 
+    headers: myHeaders, 
+    redirect: "follow" 
+  }; 
+  // Construcción de la URL con filtro de alias 
+  const url = new URL(`${API_URL}/v1/client/contact?`); 
+  if (alias !== undefined && alias !== null && alias !== '') 
+      url.searchParams.append('alias', alias); 
+
+  
+  return fetchWithErrorHandling(url.toString(), requestOptions); 
+}

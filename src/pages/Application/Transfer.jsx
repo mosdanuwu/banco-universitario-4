@@ -1,173 +1,167 @@
-import React from 'react'
+import React, { useState } from 'react';
 import NavbarApp from '../../components/Layout/NavbarApp/NavbarApp';
 import Sidebar from "../../components/Layout/Sidebar/Sidebar";
-import { useState } from "react";
+import { Form, Button, Container, Row, Col, InputGroup } from 'react-bootstrap';
 import './Transfer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { hasFieldError } from '../../utils/formValidation';
+import { getNumberAccount } from '../../api/api';
 
 
+function Transfer() {
+  // Estados para manejar los valores de los campos
+  const [accountNumber, setAccountNumber] = useState("");
+  const [amount, setAmount] = useState("0.00");
+  const [description, setDescription] = useState("");
+  const [errors, setErrors] = useState({}); 
+  const [idNumber, seIdNumber] = useState('');
+  const [firtstName, setFirstName]=useState('');
+  const [lastName, setLastName]=useState('');
 
- function Transfer () {
-        
-        // Estados para manejar los valores de los campos
-        const [miCuenta, setMiCuenta] = useState("");
-        const [cuentaDestino, setCuentaDestino] = useState("");
-        const [monto, setMonto] = useState("");
-        const [concepto, setConcepto] = useState("");
-      
-        // Manejar el reset de los campos
-        const handleReset = () => {
-          setMiCuenta("");
-          setCuentaDestino("");
-          setMonto("");
-          setConcepto("");
-        };
-      
-        // Manejar el submit
-        const handleSubmit = (e) => {
-          e.preventDefault();
-          console.log({
-            miCuenta,
-            cuentaDestino,
-            monto,
-            concepto,
-          });
-          alert("Datos enviados con éxito.");
-        };
+
+  // Manejar el reset de los campos
+  const handleReset = () => {
+    setAccountNumber("");
+    setAmount("0.00");
+    setDescription("");
+  };
+
+  /*const handleAccountNumberChange = (e) => { 
+    const value = e.target.value; 
+    const regex = /^[0-9]*$/;
+     if (regex.test(value) && value.length <= 20) 
+      { setAccountNumber(value); 
+        const error = hasFieldError(value, [{ required: true }, { accountNumber: true }]); 
+        setErrors({ ...errors, accountNumber: error }); 
+      } 
+        else { 
+          setErrors({ ...errors, accountNumber: "El número de cuenta debe ser de 20 dígitos" });
+
+        } 
+    }*/
   
-        return (
-    
-          <div  className= "transfer">
-             <NavbarApp/>
-             <Sidebar/>
 
-             <div className="content">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-4 col-md-4 col-sm-12">
-                                <br />
-                                <br />
-                                <h2 className="transfer-title">Transferencia a Terceros</h2>
-                                <br></br>
-                                <br></br>
+  // Manejar la validación al hacer clic en el botón de búsqueda 
+  const handleSearchClick = () => { 
+    const error = hasFieldError(accountNumber, [{ required: true }, { maxLength: 20 }, { minLength: 20 }]); 
+    setErrors({ ...errors, accountNumber: error }); 
+    if (!error) { console.log("Buscar número de cuenta:", accountNumber); // Aquí puedes agregar la lógica para buscar la cuenta 
+    } };
 
-                            </div>
-                            <div className="col-lg-4 col-md-4 col-sm-12">
-                            </div>
-                            <div className="col-lg-4 col-md-4 col-sm-12">
-                                
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-3 col-md-3 col-sm-1"></div>
-                            <div className="col-lg-6 col-md-6 col-sm-10">
-                                <div className="formTransf">
-                                        <h3>Dato de la operación</h3>
-                                        <div className="row">
-                                                <div className="col-lg-1"></div>
-                                                <div className="col-lg-6">
-                                                        <form onSubmit={handleSubmit}>
-                                                                {/* Campo 1: Desde mi cuenta */}
-                                                                <div className="mb-3">
-                                                                <label htmlFor="miCuenta" className="form-label">
-                                                                Desde mi cuenta
-                                                                </label>
-                                                                <select
-                                                                id="miCuenta"
-                                                                className="form-select"
-                                                                value={miCuenta}
-                                                                onChange={(e) => setMiCuenta(e.target.value)}
-                                                                >
-                                                                <option value="">Seleccione una cuenta</option>
-                                                                <option value="Cuenta 1">Cuenta 1</option>
-                                                                <option value="Cuenta 2">Cuenta 2</option>
-                                                                </select>
-                                                                </div>
+  // Manejar el submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({
+      accountNumber,
+      amount,
+      description,
+    });
+    alert("Datos enviados con éxito.");
+  };
 
-                                                                {/* Campo 2: A la cuenta de */}
-                                                                <div className="mb-3">
-                                                                <label htmlFor="cuentaDestino" className="form-label">
-                                                                A la cuenta de
-                                                                </label>
-                                                                <select
-                                                                id="cuentaDestino"
-                                                                className="form-select"
-                                                                value={cuentaDestino}
-                                                                onChange={(e) => setCuentaDestino(e.target.value)}
-                                                                >
-                                                                <option value="">Seleccione una cuenta</option>
-                                                                <option value="Cuenta 3">Cuenta 3</option>
-                                                                <option value="Cuenta 4">Cuenta 4</option>
-                                                                </select>
-                                                                </div>
+  return (
+    <div className="transfer">
+      <NavbarApp />
+      <Sidebar />
 
-                                                                {/* Campo 3: Transferir */}
-                                                                <div className="mb-3">
-                                                                <label htmlFor="monto" className="form-label">
-                                                                Transferir (Bs)
-                                                                </label>
-                                                                <input
-                                                                type="number"
-                                                                id="monto"
-                                                                className="form-control"
-                                                                placeholder="Monto a transferir"
-                                                                value={monto}
-                                                                onChange={(e) => setMonto(e.target.value)}
-                                                                />
-                                                                </div>
+      <div className="content">
+        <Container>
+          <Row>
+            <Col lg={4} md={4} sm={12}>
+              <br />
+              <br />
+              <h2 className="transfer-title">Transferencia a Terceros</h2>
+              <br />
+              <br />
+            </Col>
+            <Col lg={4} md={4} sm={12}></Col>
+            <Col lg={4} md={4} sm={12}></Col>
+          </Row>
+          <Row>
+            <Col lg={3} md={3} sm={1}></Col>
+            <Col lg={6} md={6} sm={10}>
+              <div className="formTransf">
+                <h3>Dato de la operación</h3>
+                <Row>
+                  <Col lg={1}></Col>
+                  <Col lg={6}>
+                    <Form onSubmit={handleSubmit}>
+                      
+                      {/* Campo 2: A la cuenta de */}
+                      <Form.Group className="mb-3">
+                        <Form.Label htmlFor="cuentaDestino">Nro. de la Cuenta Destino</Form.Label>
+                        <InputGroup>
+                        <Form.Control
+                          id="cuentaDestino"
+                          value={accountNumber}
+                          placeholder="Ingrese número de la cuenta"
+                          onChange={(e) => setAccountNumber(e.target.value)}
+                        />
+                        <Button 
+                        className="btn-search outline-secondary" 
+                        variant="success"
+                        onClick={handleSearchClick}
+                        >
+                          <FontAwesomeIcon icon={faSearch}/>
+                        </Button>
+                        <Form.Control.Feedback type="invalid"> 
+                          {errors.accountNumber} 
+                        </Form.Control.Feedback>
+                        </InputGroup>
+                      
+                      </Form.Group>
 
-                                                                {/* Campo 4: Concepto */}
-                                                                <div className="mb-3">
-                                                                <label htmlFor="concepto" className="form-label">
-                                                                Concepto
-                                                                </label>
-                                                                <input
-                                                                type="text"
-                                                                id="concepto"
-                                                                className="form-control"
-                                                                placeholder="Escriba el concepto"
-                                                                value={concepto}
-                                                                onChange={(e) => setConcepto(e.target.value)}
-                                                                />
-                                                                </div>
+                      {/* Campo 3: Transferir */}
+                      <Form.Group className="mb-3">
+                        <Form.Label htmlFor="monto">Monto (Bs)</Form.Label>
+                        <Form.Control
+                          type="number"
+                          id="monto"
+                          placeholder="0.00"
+                          value={amount}
+                          onChange={(e) => setAmount(e.target.value)}
+                        />
+                      </Form.Group>
 
-                                                                {/* Botones */}
-                                                                <div className="d-flex justify-content-between">
-                                                                
-                                                                <button type="submit" className="btn btn-primary">
-                                                                Continuar
-                                                                </button>
-                                                                </div>
-                                                        </form>
-                                                </div>
-                                                <div className="col-lg-1"></div>
-                                                <div className="col-lg-4">
-                                                        <form action="">
-                                                        <div className="d-flex justify-content-between">
-                                                                <button
-                                                                type="button"
-                                                                className="btn btn-secondary"
-                                                                onClick={handleReset}
-                                                                >
-                                                                Borrar
-                                                                </button> 
-                                                                </div>  
-                                                        </form>
-                                                </div>
-                                        </div>
-                                        </div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-sm-1"></div>
+                      {/* Campo 4: Concepto */}
+                      <Form.Group className="mb-3">
+                        <Form.Label htmlFor="description">Concepto</Form.Label>
+                        <Form.Control
+                          type="text"
+                          id="description"
+                          placeholder="Escriba el concepto"
+                          value={description}
+                          onChange={(e) => setDescription(e.target.value)}
+                        />
+                      </Form.Group>
 
-                        </div>
+                      {/* Botones */}
+                      <div className="d-flex justify-content-between">
+                        <Button variant="primary" type="submit">
+                          Continuar
+                        </Button>
+                      </div>
+                    </Form>
+                  </Col>
+                  <Col lg={1}></Col>
+                  <Col lg={4}>
+                    <div className="d-flex justify-content-between">
+                      <Button variant="secondary" onClick={handleReset}>
+                        Borrar
+                      </Button>
                     </div>
-                </div>
-     
-
-      
-          </div>
-              
-
-  
-  )
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+            <Col lg={3} md={3} sm={1}></Col>
+          </Row>
+        </Container>
+      </div>
+    </div>
+  );
 }
+
 export default Transfer;
+
