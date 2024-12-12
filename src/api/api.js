@@ -1,4 +1,4 @@
-const API_URL = '/api'
+const API_URL = 'http://localhost:3000';
 
 
 export const fetchWithErrorHandling = async (url, options = {}) => {
@@ -11,13 +11,10 @@ export const fetchWithErrorHandling = async (url, options = {}) => {
     return response.json();
   } catch (error) {
     console.error('Error en la solicitud:', error);
-    throw error; // Vuelve a lanzar el error para manejarlo en el componente
+    throw error; 
   }
 };
 
-export const getUsers = async () => {
-  return fetchWithErrorHandling(`${API_URL}/users`);
-};
 
 export const loginUser = async (credentials) => { 
     const myHeaders = new Headers(); 
@@ -43,6 +40,24 @@ export const registerUser = async (userData) => {
 return fetchWithErrorHandling(`${API_URL}/v1/public/client/user/register`, requestOptions); 
 };
 
+
+  export const updatePassword = async (token, passwords) => { 
+    const myHeaders = new Headers();
+    myHeaders.append("Accept-Language", "es");
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Authorization", `Bearer ${token}`);
+    const requestOptions = {
+      method: "PATCH",
+      headers: myHeaders,
+      body: JSON.stringify(passwords),
+      redirect: "follow"
+    };
+    
+    return fetchWithErrorHandling(`${API_URL}/v1/client/user/password`, requestOptions);
+  
+  }
+  
+  
 export const getBalance = async (token) => { 
   const myHeaders = new Headers(); 
   myHeaders.append("Accept-Language", "es"); 
@@ -50,3 +65,168 @@ export const getBalance = async (token) => {
   const requestOptions = { method: "GET", headers: myHeaders, redirect: "follow" }; 
   return fetchWithErrorHandling(`${API_URL}/v1/client/user/balance`, requestOptions); 
 }; 
+
+export const getWhoAmI = async (token) =>{
+
+  const myHeaders = new Headers();
+  myHeaders.append("Accept-Language", "es");
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  return fetchWithErrorHandling(`${API_URL}/v1/client/user/whoami`, requestOptions); 
+};
+
+
+
+export const getMovements = async (token, currentPage, itemsPerPage, multiplier) =>{
+
+  const myHeaders = new Headers();
+  myHeaders.append("Accept-Language", "es");
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const params = new URLSearchParams();
+  params.append("page", currentPage);
+  params.append("page_size", itemsPerPage);
+
+  // Solo agregar el parámetro multiplier si su valor es distinto a 0
+  if (multiplier !== 0) {
+    params.append("multiplier", multiplier);
+  }
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  const url = `${API_URL}/v1/client/movement?${params.toString()}`;
+  return fetchWithErrorHandling(url, requestOptions); 
+
+ 
+};
+
+export const getNumberAccount = async(token, numberAccount)=>{
+  const myHeaders = new Headers();
+  myHeaders.append("Accept-Language", "es");
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  return fetchWithErrorHandling(`${API_URL}/v1/client/user/account/${numberAccount}`, requestOptions); 
+}
+
+export const createTransfer = async (transferData) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: JSON.stringify({transferData}),
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/movement`, requestOptions);
+
+}
+
+
+export const createContact = async (token, dataContact) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: JSON.stringify({dataContact}),
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact`, requestOptions);
+
+}
+
+export const updateContact = async (token, id, newData) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "PATCH",
+    headers: myHeaders,
+    body: JSON.stringify({newData}),
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact/${id}`, requestOptions);
+
+}
+
+
+export const deleteContact = async (token, id) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "DELETE",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact/${id}`, requestOptions);
+
+}
+
+export const getContact = async (token, id) => { 
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+  
+  return fetchWithErrorHandling(`${API_URL}/v1/client/contact/${id}`, requestOptions);
+
+}
+
+
+
+export const getPaginatedContacts = async (token, page, pageSize) => { 
+  const myHeaders = new Headers(); 
+  myHeaders.append("Content-Type", "application/json"); 
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+  const requestOptions = { 
+    method: "GET", 
+    headers: myHeaders, 
+    redirect: "follow" 
+  }; 
+
+  const url = new URL(`${API_URL}/v1/client/contact`); 
+  url.searchParams.append('page', page); 
+  url.searchParams.append('page_size', pageSize); 
+  
+  return fetchWithErrorHandling(url.toString(), requestOptions); 
+};
+
+export const searchContactsByAlias = async (token, alias ) => { 
+  const myHeaders = new Headers(); 
+  myHeaders.append("Content-Type", "application/json"); 
+  myHeaders.append("Authorization", `Bearer ${token}`); 
+
+  const requestOptions = { 
+    method: "GET", 
+    headers: myHeaders, 
+    redirect: "follow" 
+  }; 
+  // Construcción de la URL con filtro de alias 
+  const url = new URL(`${API_URL}/v1/client/contact?`); 
+  if (alias !== undefined && alias !== null && alias !== '') 
+      url.searchParams.append('alias', alias); 
+
+  
+  return fetchWithErrorHandling(url.toString(), requestOptions); 
+}

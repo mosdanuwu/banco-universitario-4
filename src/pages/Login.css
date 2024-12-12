@@ -17,6 +17,12 @@
   background: linear-gradient(to top, #085F63 13%, hsl(179, 55%, 36%) 70%, #49BEB7 100%) !important; 
   color: white;
   border: none !important; 
+  
+}
+
+.link-custom{
+  font-weight: bold;
+  text-decoration:none ;
 }
 
 .custom-btn:hover { 

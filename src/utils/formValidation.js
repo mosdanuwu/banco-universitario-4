@@ -80,6 +80,10 @@ export function hasFieldError(field, validators = [], form = {}) {
                 isValid = Number(field) <= value;
                 message = `Valor máximo ${value}`;
                 break;
+            case "accountNumber":
+                isValid = isValidAccountNumber(field);
+                message = `Debe ser de 20 digitos positivos `;
+                break;
         
         }
         if (!isValid) return message;
@@ -87,6 +91,13 @@ export function hasFieldError(field, validators = [], form = {}) {
     return null;
 }
 
+
+export function isValidAccountNumber(accountNumber) {
+    const regex = /^[0-9]{20}$/; 
+    return regex.test(accountNumber); 
+  }
+  
+  
 export function hasFieldsErrors(fields, validators) {
     let result = {};
     for (const fieldName in fields) {

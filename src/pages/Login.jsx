@@ -189,7 +189,7 @@ export default function Login() {
               </InputGroup>
             </Form.Group>
             <Button type="submit" className="btn-primary w-100 mb-3 custom-btn">
-              <Link to="/application/welcome" className='text-white'>Ingresar</Link>
+              <Link to="/application/welcome" className='link-custom text-white'>Ingresar</Link>
             </Button>
             <div className="text-center">
               <p>¿Aún no tienes cuenta? <Link to="/registro">Crear cuenta</Link></p>
